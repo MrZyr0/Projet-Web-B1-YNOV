@@ -4,9 +4,31 @@
   padding: 0px;
 }
 
+.Page
+{
+  padding: 50px;
+
+  background-color: #272A33;
+}
+.Entete
+{
+  display: flex;
+  flex-flow: column nowrap;
+
+  position: relative;
+
+  margin-bottom: 50px;
+  padding: 10px;
+  padding-bottom: 20px;
+
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+
 .Entete_Titre-Tournois
 {
-  font-size: 16px;
+  margin-bottom: 15px;
+
+  font-size: 50px;
   font-style: oblique;
   font-weight: bold;
   font-family: fantasy;
@@ -16,7 +38,9 @@
 
 .Entete_Description
 {
-  font-size: 12px;
+  margin-bottom: 15px;
+
+  font-size: 15px;
   font-style: oblique;
   font-weight: bold;
   font-family: fantasy;
@@ -26,7 +50,7 @@
 
 .Entete_Nom-Hote
 {
-  font-size: 16px;
+  font-size: 25px;
   font-style: oblique;
   font-weight: bold;
   font-family: fantasy;
@@ -36,5 +60,25 @@
 
 .Entete_Logo-Jeux
 {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+
+  width: 80px;
+  height: auto;
+
   filter: drop-shadow(5px 5px 5px #222);
+}
+
+.Arbre
+{
+  display: flex;
+  flex-flow: column nowrap;
+
+  position: relative;
+
+  padding: 10px;
+  padding-bottom: 20px;
+
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
