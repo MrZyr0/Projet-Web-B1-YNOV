@@ -1,0 +1,23 @@
+*                   /* Initialisation du css */
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+.Entete_Titre-Tournois
+{
+  font-size: 16px;
+  font-style: oblique;
+  font-weight: bold;
+  font-family: fantasy;
+
+  color: #fc9e00;
+}
+
+.Entete_Description
+{
+  font-size: 12px;
+  font-style: oblique;
+  font-weight: bold;
+  font-family: fantasy;
+}
