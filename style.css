@@ -84,19 +84,15 @@
   padding-bottom: 20px;
 
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .Arbre_Tour      /* Pour chaques Tours */
-=======
-=======
->>>>>>> 889fe74cdc04a7bc4d771a9de92724dcc8773f36
+{
   transition-property: transform;
   transition-duration: 1s;
 }
 
 .Arbre_Tour-3, .Arbre_Tour-2, .Arbre_Tour-1, .Arbre_Tour-0      /* Les différents Tour */
->>>>>>> 889fe74cdc04a7bc4d771a9de92724dcc8773f36
 {
   display: flex;
   flex-flow: row nowrap;
