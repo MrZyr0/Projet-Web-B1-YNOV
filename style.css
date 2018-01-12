@@ -79,8 +79,10 @@
   padding-bottom: 20px;
 
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
-}
 
+  transition-property: transform;
+  transition-duration: 1s;
+}
 
 .Arbre_Tour-3, .Arbre_Tour-2, .Arbre_Tour-1, .Arbre_Tour-0      /* Les différents Tour */
 {
