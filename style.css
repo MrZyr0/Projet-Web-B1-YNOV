@@ -89,6 +89,12 @@
 
   justify-content: space-around;
 }
+
+.Joueur
+{
+  cursor: pointer;
+}
+
 .Arbre_Liens-1
 {
   display: flex;
