@@ -137,17 +137,7 @@
   color: white;
 }
 
-.Connecteur-Bas-Joueur
-{
-  width: 2px;
-  height: 20px;
-
-  margin: 0px auto;
-
-  background-color: #BEBFC1;
-}
-
-.Connecteur-Haut-Joueur
+.Connecteur-Joueur
 {
   width: 2px;
   height: 20px;
@@ -170,9 +160,25 @@
   flex-flow: row nowrap;
 }
 
-.Arbre_Conteneur-Connecteurs-Inter-Tours-1_Conteneur-Connecteurs_Connecteur       /* Chaques connecteurs du premier inter-tours*/
+.Arbre_Conteneur-Connecteurs-Inter-Tour-3_Conteneur-Connecteurs_Connecteur       /* Chaques connecteurs du premier inter-tours*/
 {
-  width: 86px;
+  width: 111px;
+  height: 2px;
+
+  background-color: #BEBFC1;
+}
+
+.Arbre_Conteneur-Connecteurs-Inter-Tour-2_Conteneur-Connecteurs_Connecteur       /* Chaques connecteurs du premier inter-tours*/
+{
+  width: 219px;
+  height: 2px;
+
+  background-color: #BEBFC1;
+}
+
+.Arbre_Conteneur-Connecteurs-Inter-Tour-1_Conteneur-Connecteurs_Connecteur       /* Chaques connecteurs du premier inter-tours*/
+{
+  width: 438px;
   height: 2px;
 
   background-color: #BEBFC1;
