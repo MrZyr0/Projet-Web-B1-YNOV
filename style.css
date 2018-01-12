@@ -1,15 +1,19 @@
+/* INITILISATION ELEMENTS */
 *                   /* Initialisation du css */
 {
   margin: 0px;
   padding: 0px;
 }
 
+/* STYLES PAGE */
 .Page
 {
   padding: 50px;
 
   background-color: #272A33;
 }
+
+/* STYLES ENTETE */
 .Entete
 {
   display: flex;
@@ -70,6 +74,7 @@
   filter: drop-shadow(5px 5px 5px #222);
 }
 
+/* STYLES ARBRE */
 .Arbre                    /* Conteneur Arbre */
 {
   display: flex;
@@ -79,10 +84,19 @@
   padding-bottom: 20px;
 
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+.Arbre_Tour      /* Pour chaques Tours */
+=======
+=======
+>>>>>>> 889fe74cdc04a7bc4d771a9de92724dcc8773f36
+  transition-property: transform;
+  transition-duration: 1s;
 }
 
-
 .Arbre_Tour-3, .Arbre_Tour-2, .Arbre_Tour-1, .Arbre_Tour-0      /* Les différents Tour */
+>>>>>>> 889fe74cdc04a7bc4d771a9de92724dcc8773f36
 {
   display: flex;
   flex-flow: row nowrap;
@@ -92,7 +106,39 @@
 
 .Joueur                   /* DIV de chaques joueurs */
 {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  padding: 5px;
+
+  border: 3px solid #B4B4B4;
+  border-radius: 5px;
   cursor: pointer;
+}
+
+.Pseudo-Joueurs
+{
+  padding-bottom: 4px;
+
+  border-bottom: 2px solid white;
+
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: cursive;
+
+  color: white;
+}
+
+.Score-Joueurs
+{
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: cursive;
+
+  color: white;
 }
 
 .Connecteur-Bas-Joueur
@@ -100,7 +146,7 @@
   width: 2px;
   height: 20px;
 
-  margin: -4px auto;
+  margin: 0px auto;
 
   background-color: #BEBFC1;
 }
@@ -115,11 +161,23 @@
   background-color: #BEBFC1;
 }
 
-.Arbre_Liens-1
+.Arbre_Conteneur-Connecteurs-Inter-Tours /* Conteneur pour tous les inters-connecteurs */
 {
   display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-around;
+  flex-flow: row nowrap;
+  justify-content: space-around;
 }
 
-.Connec
+.Conteneur-Connecteurs          /* Pour chaques paire de connecteur */
+{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.Arbre_Conteneur-Connecteurs-Inter-Tours-1_Conteneur-Connecteurs_Connecteur       /* Chaques connecteurs du premier inter-tours*/
+{
+  width: 86px;
+  height: 2px;
+
+  background-color: #BEBFC1;
+}
