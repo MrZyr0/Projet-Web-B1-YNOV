@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
 
     player01.forEach(function(event){
-      event.addEventListener("click",bgScript)
+      event.addEventListener("click",highlightP01)
     })
 
     function highlightP01()
