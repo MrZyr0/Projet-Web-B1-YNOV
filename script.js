@@ -407,14 +407,21 @@ document.addEventListener("DOMContentLoaded",function(){
 
     //eventlistener des cliques sur les onglets
 
-    tabBracket.addEventListener("click", switchToTree)
+    tabBracket.addEventListener("click", switchToBracket)
     tabPlayers.addEventListener("click", switchToPlayers)
     tabOptions.addEventListener("click", switchToOptions)
     tabHelp.addEventListener("click", switchToHelp)
 
+    //définition des variables de page
+
+    var pageBracket = document.querySelector(".Arbre-Onglet")
+    var pagePlayers = document.querySelector(".Joueurs-Onglet")
+    var pageOptions = document.querySelector(".Parametres-Onglet")
+    var pageHelp = document.querySelector(".Aide-Onglet")
+
     //fonctions permettant de switch sur les différents onglets
 
-    function switchToTree()
+    function switchToBracket()
     {
       if (isTabBracket)
       {
@@ -423,10 +430,51 @@ document.addEventListener("DOMContentLoaded",function(){
       else
       {
         console.log("Switched to tab bracket")
+
         isTabBracket = true
-        isTabPlayers = false
-        isTabOptions = false
-        isTabHelp = false
+
+        if (isTabPlayers)
+        {
+          pagePlayers.style.transform = "rotateY(90deg)"
+
+          var timerDisplay = setTimeout(function(){
+            pagePlayers.style.display = "none"
+            pageBracket.style.display = "flex"
+            clearTimeout(timerDisplay)
+          }, 1000)
+
+          isTabPlayers = false
+        }
+        else if (isTabOptions)
+        {
+          pageOptions.style.transform = "rotateY(90deg)"
+
+          var timerDisplay = setTimeout(function(){
+            pageOptions.style.display = "none"
+            pageBracket.style.display = "flex"
+            clearTimeout(timerDisplay)
+          }, 1000)
+
+          isTabOptions = false
+        }
+        else if (isTabHelp)
+        {
+          pageHelp.style.transform = "rotateY(90deg)"
+
+          var timerDisplay = setTimeout(function(){
+            pageHelp.style.display = "none"
+            pageBracket.style.display = "flex"
+            clearTimeout(timerDisplay)
+          }, 1000)
+
+          isTabHelp = false
+        }
+
+        var timerDisplay2 = setTimeout(function()
+          {
+            pageBracket.style.transform = "rotateY(0deg)"
+            clearTimeout(timerDisplay2)
+          }, 1100)
       }
     }
 
@@ -439,10 +487,52 @@ document.addEventListener("DOMContentLoaded",function(){
       else
       {
         console.log("Switched to tab players")
-        isTabBracket = false
+
         isTabPlayers = true
-        isTabOptions = false
-        isTabHelp = false
+
+        if (isTabBracket)
+        {
+          pageBracket.style.transform = "rotateY(90deg)"
+
+          var timerDisplay = setTimeout(function(){
+            pageBracket.style.display = "none"
+            pagePlayers.style.display = "flex"
+            clearTimeout(timerDisplay)
+          }, 1000)
+
+          isTabBracket = false
+        }
+        else if (isTabOptions)
+        {
+          pageOptions.style.transform = "rotateY(90deg)"
+
+          var timerDisplay = setTimeout(function(){
+            pageOptions.style.display = "none"
+            pagePlayers.style.display = "flex"
+            clearTimeout(timerDisplay)
+          }, 1000)
+
+          isTabOptions = false
+        }
+        else if (isTabHelp)
+        {
+          pageHelp.style.transform = "rotateY(90deg)"
+
+          var timerDisplay = setTimeout(function(){
+            pageHelp.style.display = "none"
+            pagePlayers.style.display = "flex"
+            clearTimeout(timerDisplay)
+          }, 1000)
+
+          isTabHelp = false
+        }
+
+        var timerDisplay2 = setTimeout(function()
+          {
+            pagePlayers.style.transform = "rotateY(0deg)"
+            clearTimeout(timerDisplay2)
+          }, 1010)
+
 
       }
     }
@@ -456,11 +546,51 @@ document.addEventListener("DOMContentLoaded",function(){
       else
       {
         console.log("Switched to tab options")
-        isTabBracket = false
-        isTabPlayers = false
-        isTabOptions = true
-        isTabHelp = false
 
+        isTabOptions = true
+
+        if (isTabPlayers)
+        {
+          pagePlayers.style.transform = "rotateY(90deg)"
+
+          var timerDisplay = setTimeout(function(){
+            pagePlayers.style.display = "none"
+            pageOptions.style.display = "flex"
+            clearTimeout(timerDisplay)
+          }, 1000)
+
+          isTabPlayers = false
+        }
+        else if (isTabBracket)
+        {
+          pageBracket.style.transform = "rotateY(90deg)"
+
+          var timerDisplay = setTimeout(function(){
+            pageBracket.style.display = "none"
+            pageOptions.style.display = "flex"
+            clearTimeout(timerDisplay)
+          }, 1000)
+
+          isTabBracket = false
+        }
+        else if (isTabHelp)
+        {
+          pageHelp.style.transform = "rotateY(90deg)"
+
+          var timerDisplay = setTimeout(function(){
+            pageHelp.style.display = "none"
+            pageOptions.style.display = "flex"
+            clearTimeout(timerDisplay)
+          }, 1000)
+
+          isTabHelp = false
+        }
+
+        var timerDisplay2 = setTimeout(function()
+          {
+            pageOptions.style.transform = "rotateY(0deg)"
+            clearTimeout(timerDisplay2)
+          }, 1100)
       }
     }
 
@@ -473,11 +603,51 @@ document.addEventListener("DOMContentLoaded",function(){
       else
       {
         console.log("Switched to tab help")
-        isTabBracket = false
-        isTabPlayers = false
-        isTabOptions = false
+
         isTabHelp = true
 
+        if (isTabPlayers)
+        {
+          pagePlayers.style.transform = "rotateY(90deg)"
+
+          var timerDisplay = setTimeout(function(){
+            pagePlayers.style.display = "none"
+            pageHelp.style.display = "flex"
+            clearTimeout(timerDisplay)
+          }, 1000)
+
+          isTabPlayers = false
+        }
+        else if (isTabBracket)
+        {
+          pageBracket.style.transform = "rotateY(90deg)"
+
+          var timerDisplay = setTimeout(function(){
+            pageBracket.style.display = "none"
+            pageHelp.style.display = "flex"
+            clearTimeout(timerDisplay)
+          }, 1000)
+
+          isTabBracket = false
+        }
+        else if (isTabOptions)
+        {
+          pageOptions.style.transform = "rotateY(90deg)"
+
+          var timerDisplay = setTimeout(function(){
+            pageOptions.style.display = "none"
+            pageHelp.style.display = "flex"
+            clearTimeout(timerDisplay)
+          }, 1000)
+
+          isTabOptions = false
+        }
+
+        var timerDisplay2 = setTimeout(function()
+          {
+            pageHelp.style.transform = "rotateY(0deg)"
+            clearTimeout(timerDisplay2)
+          }, 1100)
       }
     }
 
