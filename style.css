@@ -75,7 +75,7 @@
 }
 
 /* STYLES ARBRE */
-.Arbre                    /* Conteneur Arbre */
+.Arbre-Onglet                    /* Conteneur Arbre */
 {
   display: flex;
   flex-flow: column nowrap;
@@ -214,4 +214,26 @@
   font-weight: lighter;
 
   color: white;
+}
+
+.Joueurs-Onglet
+{
+  display: none;
+  flex-flow: column nowrap;
+
+  padding: 10px;
+  padding-bottom: 20px;
+
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.Parametres-Onglet
+{
+  display: none;
+  flex-flow: column nowrap;
+
+  padding: 10px;
+  padding-bottom: 20px;
+
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
 }
