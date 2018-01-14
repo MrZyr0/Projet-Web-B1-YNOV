@@ -1,74 +1,130 @@
-/* INITILISATION ELEMENTS */
-*                   /* Initialisation du css */
+/* INITILISATION CSS */
+@font-face
+{
+  font-family: 'Grand-Titre';
+  src: url('Contenu/Polices/Polices/good_morning_2/Good-Morning.ttf');
+}
+
+@font-face
+{
+  font-family: 'Petit-Titre';
+  src: url('Contenu/Polices/Polices/roboto/Roboto-Thin.ttf');
+}
+
+@font-face
+{
+  font-family: 'Hote';
+  src: url('Contenu/Polices/Polices/krinkes/KrinkesRegularPERSONAL.ttf');
+}
+
+
+*                   /* Initialisation CSS des éléments HTML */
 {
   margin: 0px;
   padding: 0px;
 }
 
+
+
 /* STYLES PAGE */
 .Page
 {
-  padding: 50px;
-
   background-color: #272A33;
 }
+
+
 
 /* STYLES ENTETE */
 .Entete
 {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
+  justify-content: space-around;  /* Si le space evenly n'est pas compatible */
+  justify-content: space-evenly;
+  align-items: center;
 
-  position: relative;
+  padding-top: 65px;
+  padding-bottom: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
 
-  margin-bottom: 50px;
-  padding: 10px;
-  padding-bottom: 20px;
+  margin-bottom: 80px;
 
-  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  background-color: #23252D;
+
+  border-bottom: 2px solid #383a42;
 }
 
 .Entete_Titre-Tournois
 {
-  margin-bottom: 15px;
+  min-width: 720px;
 
-  font-size: 50px;
-  font-style: oblique;
-  font-weight: bold;
-  font-family: fantasy;
+  margin-bottom: 55px;
+
+  font-family: 'Grand-Titre';
+  font-size: 30px;
+  font-weight: lighter;
 
   color: #fc9e00;
 }
 
-.Entete_Description
+.Infos-Texte_Desc-Hote
 {
-  margin-bottom: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
 
-  font-size: 15px;
-  font-style: oblique;
-  font-weight: bold;
-  font-family: fantasy;
+.Infos-Texte_Desc-Hote_Hebergement
+{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 
-  color: grey;
+  padding: 5px;
+}
+
+.Entete_Hote-Titre
+{
+  margin-bottom: 10px;
+
+  font-family: 'Petit-Titre';
+  font-weight: bolder;
+  color: #BCBFC7;
 }
 
 .Entete_Nom-Hote
 {
-  font-size: 25px;
+  font-family: Hote;
+  font-size: 40px;
   font-style: oblique;
-  font-weight: bold;
-  font-family: fantasy;
 
-  color: #579cbb;
+  color: #D8D8D8;
+}
+
+.Entete_Description
+{
+  max-width: 580px;
+  margin-bottom: 15px;
+
+  font-size: 15px;
+  font-style: oblique;
+
+  color: #BCBFC7;
+}
+
+.Entete_Infos-Img
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 50px;
 }
 
 .Entete_Logo-Jeux
 {
-  position: absolute;
-  bottom: 10px;
-  right: 15px;
-
-  width: 80px;
+  width: 90%;
   height: auto;
 
   filter: drop-shadow(5px 5px 5px #222);
@@ -76,32 +132,62 @@
 
 
 
-/* STYLES TOUT LES ONGLETS */
-.Onglets
+/* STYLES NAVIGATION */
+.Nav_Onglets
 {
   display: flex;
   flex-flow: row nowrap;
 
-  padding-top:5px;
-  padding-bottom:5px;
+  position: relative;
 
-  box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.75);
-  border-bottom: 2px solid black;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  margin-left: 70px;
+  margin-right: 70px;
+
+  background-color: #333743;
+  border-bottom: 2px solid #747474;
+
 }
 
-/* STYLES BASE DES ONGLETS ONGLET */
-.Onglets_
+.Nav_Onglets:before
+{
+  content: " ";
+  width: 100%;
+  height: 95%;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -10;
+
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.Nav_Onglets_Boutton
 {
   padding: 5px;
-  margin-right: 10px;
-  margin-left: 10px;
 
-  border: 2px solid white;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: skewX(-30deg);
 
   cursor: pointer;
 }
 
 
+/* STYLES BASE DES ONGLETS ONGLET */
+.Onglets
+{
+  margin-left: 70px;
+  margin-right: 70px;
+
+  background-color: #333743;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+
+}
 
 /* STYLES ONGLET ARBRE */
 .Arbre-Onglet                    /* Conteneur Arbre */
@@ -112,7 +198,6 @@
   padding: 10px;
   padding-bottom: 20px;
 
-  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
 
 
   transform: rotateY(0deg);
@@ -257,6 +342,11 @@
   transition-duration: 1s;
 }
 
+.Onglets_Aide
+{
+  border-right: 2px solid white;
+}
+
 .Aide-Onglet
 {
   display: none;
@@ -272,4 +362,12 @@
   transform: rotateY(90deg);
   transition-property: transform;
   transition-duration: 1s;
+}
+
+.Pied-Page
+{
+  height: 50px;
+  width: 100%;
+
+  margin-top: 100px;
 }

@@ -2,42 +2,51 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Arbre Tournois</title>
+    <link rel="icon" type="image/png" href="Contenu/Logos/Favicon.png" />
+    <title>Gestion Tournois</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js"></script>
-
   </head>
 
   <body class="Page">
     <header class="Entete">
-      <h1 class="Entete_Titre-Tournois">Tournois de lancement</h1>
-      <p class="Entete_Description">Tournois d'overwatch du Mardi 16 Janvier 2018.</p>
-      <p class="Entete_Nom-Hote">Prism</p>
-      <img src="Contenu/Logos_Jeux/Overwatch.png" alt="Logo Jeux" class="Entete_Logo-Jeux">
+      <div class="Entete_Infos-Texte">
+        <h1 class="Entete_Titre-Tournois">TOURNOIS DE LANCEMENT !!</h1>
+        <div class="Infos-Texte_Desc-Hote">
+          <div class="Infos-Texte_Desc-Hote_Hebergement">
+            <p class="Entete_Hote-Titre">Hébergé par</p>
+            <p class="Entete_Nom-Hote">Prism1</p>
+          </div>
+          <p class="Entete_Description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem</p>
+        </div>
+      </div>
+      <div class="Entete_Infos-Img">
+        <img src="Contenu/Logos/Logos_Jeux/Overwatch.png" alt="Logo Jeux" class="Entete_Logo-Jeux">
+      </div>
     </header>
 
 
-    <nav class="Onglets">
-      <div class="Onglets_Pad Onglets_Arbre">
+    <nav class="Nav_Onglets">
+      <div class="Nav_Onglets_Boutton Onglets_Arbre">
         <p class="Onglets_Texte">Arbre</p>
       </div>
 
-      <div class="Onglets_Pad Onglet_Joueurs">
+      <div class="Nav_Onglets_Boutton Onglet_Joueurs">
         <p class="Onglets_Texte">Joueurs</p>
       </div>
 
-      <div class="Onglets_Pad Onglet_Parametres">
+      <div class="Nav_Onglets_Boutton Onglet_Parametres">
         <p class="Onglets_Texte">Paramètres</p>
       </div>
 
-      <div class="Onglets_Pad Onglets_Aide">
+      <div class="Nav_Onglets_Boutton Onglets_Aide">
         <p class="Onglets_Texte">Aide</p>
       </div>
     </nav>
 
 
 
-    <section class="Arbre-Onglet">                                           <!-- Conteneur Flex pour l'Arbre -->
+    <section class="Onglets Arbre-Onglet">                                           <!-- Conteneur Flex pour l'Arbre -->
 
       <div class="Arbre_Tour Arbre_Tour-3">                             <!-- 1er tour -->
 
@@ -250,7 +259,7 @@
 
 
 
-    <section class="Joueurs-Onglet">
+    <section class="Onglets Joueurs-Onglet">
       <p class="Joueurs-Onglet_Joueur-1">Joueur 1</p>
       <p class="Joueurs-Onglet_Joueur-2">Joueur 2</p>
       <p class="Joueurs-Onglet_Joueur-3">Joueur 3</p>
@@ -263,7 +272,7 @@
     </section>
 
 
-    <section class="Parametres-Onglet">
+    <section class="Onglets Parametres-Onglet">
       <p class="Parametres-Onglet_Nom-Tournois">Le nom du tournois</p>
       <p class="Parametres-Onglet_Desc-Tournois">Description du tournois</p>
       <p class="Parametres-Onglet_Hergeur-Tournois">Tournois Hébergé par...</p>
@@ -272,9 +281,10 @@
     </section>
 
 
-    <section class="Aide-Onglet">
+    <section class="Onglets Aide-Onglet">
       <p>Ceci sera donc l'aide de la page !</p>
     </section>
-    <a href="Contenu/test/index.html">TEST</a>
+
+    <footer class="Pied-Page"></footer>
   </body>
 </html>
