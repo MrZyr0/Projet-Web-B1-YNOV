@@ -651,4 +651,56 @@ document.addEventListener("DOMContentLoaded",function(){
       }
     }
 
-})
+    //section concernant le nombre de joueur etc...
+
+    var numberPlayer = 1
+    var listPlayer = []
+
+    howManyPlayers()
+
+    function howManyPlayers()
+    {
+      if (numberPlayer<2)
+      {
+        numberPlayer = "not enough"
+        numberBye = "none"
+      }
+      else if (numberPlayer==2)
+      {
+        var numberBye = "none"
+      }
+      else if (numberPlayer<=4)
+      {
+        var numberBye = 4 - numberPlayer
+      }
+      else if (numberPlayer<=8)
+      {
+        var numberBye = 8 - numberPlayer
+      }
+      else if (numberPlayer<=16)
+      {
+        var numberBye = 16 - numberPlayer
+      }
+      else if (numberPlayer<=32)
+      {
+        var numberBye = 32 - numberPlayer
+      }
+      else if (numberPlayer<=64)
+      {
+        var numberBye = 64 - numberPlayer
+      }
+      else if (numberPlayer<=128)
+      {
+        var numberBye = 128 - numberPlayer
+      }
+      else if (numberPlayer<=256)
+      {
+        var numberBye = 256 - numberPlayer
+      }
+
+      console.log("Players: "+numberPlayer)
+      console.log("Bye: "+numberBye)
+
+    }
+
+  })
