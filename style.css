@@ -220,6 +220,8 @@
   display: none;
   flex-flow: column nowrap;
 
+  min-height: 524px;
+
   padding: 10px;
   padding-bottom: 20px;
 
@@ -235,6 +237,8 @@
   display: none;
   flex-flow: column nowrap;
 
+  min-height: 524px;
+
   padding: 10px;
   padding-bottom: 20px;
 
@@ -249,6 +253,8 @@
 {
   display: none;
   flex-flow: column nowrap;
+
+  min-height: 524px;
 
   padding: 10px;
   padding-bottom: 20px;
