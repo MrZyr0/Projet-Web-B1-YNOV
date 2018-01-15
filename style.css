@@ -314,7 +314,9 @@
   display: none;
   flex-flow: column nowrap;
 
-  min-height: 524px;
+  overflow: auto;
+
+  height: 524px;
 
   padding: 10px;
   padding-bottom: 20px;

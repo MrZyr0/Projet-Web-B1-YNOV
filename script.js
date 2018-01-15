@@ -653,14 +653,13 @@ document.addEventListener("DOMContentLoaded",function(){
 
     //section concernant le nombre de joueur etc...
 
+    var listPlayer = []
     var btnAppOptions = document.querySelector(".btn_app_parametres")
-
     btnAppOptions.addEventListener("click", updatePlayerNumber)
 
     function updatePlayerNumber()
     {
       var numberPlayer = document.querySelector(".nbjoueurs").value
-      var listPlayer = []
 
       if (numberPlayer<2)
       {
@@ -670,38 +669,75 @@ document.addEventListener("DOMContentLoaded",function(){
       else if (numberPlayer==2)
       {
         var numberBye = "none"
+        var numberPlayerMax = 2
       }
       else if (numberPlayer<=4)
       {
         var numberBye = 4 - numberPlayer
+        var numberPlayerMax = 4
       }
       else if (numberPlayer<=8)
       {
         var numberBye = 8 - numberPlayer
+        var numberPlayerMax = 8
       }
       else if (numberPlayer<=16)
       {
         var numberBye = 16 - numberPlayer
+        var numberPlayerMax = 16
       }
       else if (numberPlayer<=32)
       {
         var numberBye = 32 - numberPlayer
+        var numberPlayerMax = 32
       }
       else if (numberPlayer<=64)
       {
         var numberBye = 64 - numberPlayer
+        var numberPlayerMax = 64
       }
       else if (numberPlayer<=128)
       {
         var numberBye = 128 - numberPlayer
+        var numberPlayerMax = 128
       }
       else if (numberPlayer<=256)
       {
         var numberBye = 256 - numberPlayer
+        var numberPlayerMax = 256
       }
 
       console.log("Players: "+numberPlayer)
       console.log("Bye: "+numberBye)
+      updateDisplayPlayer(numberPlayerMax, numberPlayer, numberBye)
+    }
+
+    function  updateDisplayPlayer(playerMax, player, bye)
+    {
+      var zonePlayerInput = document.querySelector(".Joueurs-Onglet")
+      var templateInputPlayer = document.querySelector("#boutton-nomjoueurs").innerHTML
+      console.log(templateInputPlayer)
+
+      var templateInZonePlayerInput = document.querySelectorAll(".txtjoueurs")
+      for (var i = 0; i < templateInZonePlayerInput.length; i++) {
+        templateInZonePlayerInput[i].remove()
+      }
+
+      listPlayer = []
+
+      for (var i = 0; i < playerMax; i++)
+      {
+        if (i<player)
+        {
+          listPlayer[i] = 1
+          zonePlayerInput.insertAdjacentHTML("afterbegin", templateInputPlayer)
+        }
+        else
+        {
+          listPlayer[i] = 0
+        }
+      }
+      console.log(listPlayer)
     }
 
   })
