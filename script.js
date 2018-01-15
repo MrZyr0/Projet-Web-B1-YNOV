@@ -531,7 +531,7 @@ document.addEventListener("DOMContentLoaded",function(){
           {
             pagePlayers.style.transform = "rotateY(0deg)"
             clearTimeout(timerDisplay2)
-          }, 1010)
+          }, 1100)
 
 
       }
