@@ -260,7 +260,6 @@
 
 
     <section class="Onglets Joueurs-Onglet">
-      <input type="text" name="Joueur" value="Joueur" class="txtjoueurs">
       <button type="button" name="Joueurs-Appliquer">Appliquer</button>
     </section>
 
@@ -271,6 +270,8 @@
       <p class="Parametres-Onglet_Hergeur-Tournois">Tournois Hébergé par...</p>
       <p class="Parametres-Onglet_Jeux-Tournois">Le jeux</p>
       <p>Nombre de joueurs : </p>
+      <input type="number" name="NbJoueur" value="8" class="nbjoueurs">
+      <button type="button" name="Parametres-Appliquer" class="btn_app_parametres">Appliquer</button>
     </section>
 
 
@@ -280,12 +281,8 @@
 
     <footer class="Pied-Page"></footer>
 
-    <template id="boutton-nbjoueurs">
-      <input type="number" name="NbJoueur" value="8" class="nbjoueurs">
-    </template>
-
-    <template id="boutton-app-para">
-      <button type="button" name="Parametres-Appliquer" class="btn_app_parametres">Appliquer</button>
+    <template id="boutton-nomjoueurs">
+      <input type="text" name="Joueur" value="Joueur" class="txtjoueurs">
     </template>
   </body>
 </html>
