@@ -659,7 +659,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
     function updatePlayerNumber()
     {
-      var numberPlayer = document.querySelector(".nbjoueurs")
+      var numberPlayer = document.querySelector(".nbjoueurs").value
       var listPlayer = []
 
       if (numberPlayer<2)
