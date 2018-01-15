@@ -56,31 +56,31 @@ document.addEventListener("DOMContentLoaded",function(){
       }
       for (var i = 0; i < player02.length; i++) {
         player02[i].style.filter = "none"
-        player02[i].style.backgroundColor = "#272A33"
+        player02[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player03.length; i++) {
         player03[i].style.filter = "none"
-        player03[i].style.backgroundColor = "#272A33"
+        player03[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player04.length; i++) {
         player04[i].style.filter = "none"
-        player04[i].style.backgroundColor = "#272A33"
+        player04[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player05.length; i++) {
         player05[i].style.filter = "none"
-        player05[i].style.backgroundColor = "#272A33"
+        player05[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player06.length; i++) {
         player06[i].style.filter = "none"
-        player06[i].style.backgroundColor = "#272A33"
+        player06[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player07.length; i++) {
         player07[i].style.filter = "none"
-        player07[i].style.backgroundColor = "#272A33"
+        player07[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player08.length; i++) {
         player08[i].style.filter = "none"
-        player08[i].style.backgroundColor = "#272A33"
+        player08[i].style.backgroundColor = "#333743"
       }
       isPlayer01On = true
       isPlayer02On = false
@@ -96,34 +96,34 @@ document.addEventListener("DOMContentLoaded",function(){
     {
       for (var i = 0; i < player01.length; i++) {
         player01[i].style.filter = "none"
-        player01[i].style.backgroundColor = "#272A33"
+        player01[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player02.length; i++) {
         player02[i].style.backgroundColor = "#dbdd54"
       }
       for (var i = 0; i < player03.length; i++) {
         player03[i].style.filter = "none"
-        player03[i].style.backgroundColor = "#272A33"
+        player03[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player04.length; i++) {
         player04[i].style.filter = "none"
-        player04[i].style.backgroundColor = "#272A33"
+        player04[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player05.length; i++) {
         player05[i].style.filter = "none"
-        player05[i].style.backgroundColor = "#272A33"
+        player05[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player06.length; i++) {
         player06[i].style.filter = "none"
-        player06[i].style.backgroundColor = "#272A33"
+        player06[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player07.length; i++) {
         player07[i].style.filter = "none"
-        player07[i].style.backgroundColor = "#272A33"
+        player07[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player08.length; i++) {
         player08[i].style.filter = "none"
-        player08[i].style.backgroundColor = "#272A33"
+        player08[i].style.backgroundColor = "#333743"
       }
       isPlayer01On = false
       isPlayer02On = true
@@ -140,34 +140,34 @@ document.addEventListener("DOMContentLoaded",function(){
     {
       for (var i = 0; i < player01.length; i++) {
         player01[i].style.filter = "none"
-        player01[i].style.backgroundColor = "#272A33"
+        player01[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player02.length; i++) {
         player02[i].style.filter = "none"
-        player02[i].style.backgroundColor = "#272A33"
+        player02[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player03.length; i++) {
         player03[i].style.backgroundColor = "#dbdd54"
       }
       for (var i = 0; i < player04.length; i++) {
         player04[i].style.filter = "none"
-        player04[i].style.backgroundColor = "#272A33"
+        player04[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player05.length; i++) {
         player05[i].style.filter = "none"
-        player05[i].style.backgroundColor = "#272A33"
+        player05[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player06.length; i++) {
         player06[i].style.filter = "none"
-        player06[i].style.backgroundColor = "#272A33"
+        player06[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player07.length; i++) {
         player07[i].style.filter = "none"
-        player07[i].style.backgroundColor = "#272A33"
+        player07[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player08.length; i++) {
         player08[i].style.filter = "none"
-        player08[i].style.backgroundColor = "#272A33"
+        player08[i].style.backgroundColor = "#333743"
       }
       isPlayer01On = false
       isPlayer02On = false
@@ -183,34 +183,34 @@ document.addEventListener("DOMContentLoaded",function(){
     {
       for (var i = 0; i < player01.length; i++) {
         player01[i].style.filter = "none"
-        player01[i].style.backgroundColor = "#272A33"
+        player01[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player02.length; i++) {
         player02[i].style.filter = "none"
-        player02[i].style.backgroundColor = "#272A33"
+        player02[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player03.length; i++) {
         player03[i].style.filter = "none"
-        player03[i].style.backgroundColor = "#272A33"
+        player03[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player04.length; i++) {
         player04[i].style.backgroundColor = "#dbdd54"
       }
       for (var i = 0; i < player05.length; i++) {
         player05[i].style.filter = "none"
-        player05[i].style.backgroundColor = "#272A33"
+        player05[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player06.length; i++) {
         player06[i].style.filter = "none"
-        player06[i].style.backgroundColor = "#272A33"
+        player06[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player07.length; i++) {
         player07[i].style.filter = "none"
-        player07[i].style.backgroundColor = "#272A33"
+        player07[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player08.length; i++) {
         player08[i].style.filter = "none"
-        player08[i].style.backgroundColor = "#272A33"
+        player08[i].style.backgroundColor = "#333743"
       }
       isPlayer01On = false
       isPlayer02On = false
@@ -226,34 +226,34 @@ document.addEventListener("DOMContentLoaded",function(){
     {
       for (var i = 0; i < player01.length; i++) {
         player01[i].style.filter = "none"
-        player01[i].style.backgroundColor = "#272A33"
+        player01[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player02.length; i++) {
         player02[i].style.filter = "none"
-        player02[i].style.backgroundColor = "#272A33"
+        player02[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player03.length; i++) {
         player03[i].style.filter = "none"
-        player03[i].style.backgroundColor = "#272A33"
+        player03[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player04.length; i++) {
         player04[i].style.filter = "none"
-        player04[i].style.backgroundColor = "#272A33"
+        player04[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player05.length; i++) {
         player05[i].style.backgroundColor = "#dbdd54"
       }
       for (var i = 0; i < player06.length; i++) {
         player06[i].style.filter = "none"
-        player06[i].style.backgroundColor = "#272A33"
+        player06[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player07.length; i++) {
         player07[i].style.filter = "none"
-        player07[i].style.backgroundColor = "#272A33"
+        player07[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player08.length; i++) {
         player08[i].style.filter = "none"
-        player08[i].style.backgroundColor = "#272A33"
+        player08[i].style.backgroundColor = "#333743"
       }
       isPlayer01On = false
       isPlayer02On = true
@@ -269,34 +269,34 @@ document.addEventListener("DOMContentLoaded",function(){
     {
       for (var i = 0; i < player01.length; i++) {
         player01[i].style.filter = "none"
-        player01[i].style.backgroundColor = "#272A33"
+        player01[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player02.length; i++) {
         player02[i].style.filter = "none"
-        player02[i].style.backgroundColor = "#272A33"
+        player02[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player03.length; i++) {
         player03[i].style.filter = "none"
-        player03[i].style.backgroundColor = "#272A33"
+        player03[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player04.length; i++) {
         player04[i].style.filter = "none"
-        player04[i].style.backgroundColor = "#272A33"
+        player04[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player05.length; i++) {
         player05[i].style.filter = "none"
-        player05[i].style.backgroundColor = "#272A33"
+        player05[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player06.length; i++) {
         player06[i].style.backgroundColor = "#dbdd54"
       }
       for (var i = 0; i < player07.length; i++) {
         player07[i].style.filter = "none"
-        player07[i].style.backgroundColor = "#272A33"
+        player07[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player08.length; i++) {
         player08[i].style.filter = "none"
-        player08[i].style.backgroundColor = "#272A33"
+        player08[i].style.backgroundColor = "#333743"
       }
       isPlayer01On = false
       isPlayer02On = false
@@ -312,34 +312,34 @@ document.addEventListener("DOMContentLoaded",function(){
     {
       for (var i = 0; i < player01.length; i++) {
         player01[i].style.filter = "none"
-        player01[i].style.backgroundColor = "#272A33"
+        player01[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player02.length; i++) {
         player02[i].style.filter = "none"
-        player02[i].style.backgroundColor = "#272A33"
+        player02[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player03.length; i++) {
         player03[i].style.filter = "none"
-        player03[i].style.backgroundColor = "#272A33"
+        player03[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player04.length; i++) {
         player04[i].style.filter = "none"
-        player04[i].style.backgroundColor = "#272A33"
+        player04[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player05.length; i++) {
         player05[i].style.filter = "none"
-        player05[i].style.backgroundColor = "#272A33"
+        player05[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player06.length; i++) {
         player06[i].style.filter = "none"
-        player06[i].style.backgroundColor = "#272A33"
+        player06[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player07.length; i++) {
         player07[i].style.backgroundColor = "#dbdd54"
       }
       for (var i = 0; i < player08.length; i++) {
         player08[i].style.filter = "none"
-        player08[i].style.backgroundColor = "#272A33"
+        player08[i].style.backgroundColor = "#333743"
       }
       isPlayer01On = false
       isPlayer02On = false
@@ -355,31 +355,31 @@ document.addEventListener("DOMContentLoaded",function(){
     {
       for (var i = 0; i < player01.length; i++) {
         player01[i].style.filter = "none"
-        player01[i].style.backgroundColor = "#272A33"
+        player01[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player02.length; i++) {
         player02[i].style.filter = "none"
-        player02[i].style.backgroundColor = "#272A33"
+        player02[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player03.length; i++) {
         player03[i].style.filter = "none"
-        player03[i].style.backgroundColor = "#272A33"
+        player03[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player04.length; i++) {
         player04[i].style.filter = "none"
-        player04[i].style.backgroundColor = "#272A33"
+        player04[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player05.length; i++) {
         player05[i].style.filter = "none"
-        player05[i].style.backgroundColor = "#272A33"
+        player05[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player06.length; i++) {
         player06[i].style.filter = "none"
-        player06[i].style.backgroundColor = "#272A33"
+        player06[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player07.length; i++) {
         player07[i].style.filter = "none"
-        player07[i].style.backgroundColor = "#272A33"
+        player07[i].style.backgroundColor = "#333743"
       }
       for (var i = 0; i < player08.length; i++) {
         player08[i].style.backgroundColor = "#dbdd54"
