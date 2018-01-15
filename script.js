@@ -653,13 +653,15 @@ document.addEventListener("DOMContentLoaded",function(){
 
     //section concernant le nombre de joueur etc...
 
-    var numberPlayer = 1
-    var listPlayer = []
+    var btnAppOptions = document.querySelector(".btn_app_parametres")
 
-    howManyPlayers()
+    btnAppOptions.addEventListener("click", updatePlayerNumber)
 
-    function howManyPlayers()
+    function updatePlayerNumber()
     {
+      var numberPlayer = document.querySelector(".nbjoueurs")
+      var listPlayer = []
+
       if (numberPlayer<2)
       {
         numberPlayer = "not enough"
@@ -700,7 +702,6 @@ document.addEventListener("DOMContentLoaded",function(){
 
       console.log("Players: "+numberPlayer)
       console.log("Bye: "+numberBye)
-
     }
 
   })
