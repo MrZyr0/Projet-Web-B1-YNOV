@@ -20,15 +20,15 @@ document.addEventListener("DOMContentLoaded",function(){
       }
       else if (isTabPlayerActive == true)
       {
-        tabBracket.classList.toggle("Nav_Active")
-        tabPlayer.classList.toggle("Nav_Active")
+        tabBracket.classList.toggle("Nav_Actif")
+        tabPlayer.classList.toggle("Nav_Actif")
         isTabPlayerActive = false
         isTabBracketActive = true
       }
       else if (isTabOptionActive == true)
       {
-        tabBracket.classList.toggle("Nav_Active")
-        tabOption.classList.toggle("Nav_Active")
+        tabBracket.classList.toggle("Nav_Actif")
+        tabOption.classList.toggle("Nav_Actiif")
         isTabOptionActive = false
         isTabBracketActive = true
       }
@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded",function(){
     {
       if (isTabBracketActive == true)
       {
-        tabBracket.classList.toggle("Nav_Active")
-        tabPlayer.classList.toggle("Nav_Active")
+        tabBracket.classList.toggle("Nav_Actif")
+        tabPlayer.classList.toggle("Nav_Actif")
         isTabBracketActive = false
         isTabPlayerActive = true
       }
@@ -49,8 +49,8 @@ document.addEventListener("DOMContentLoaded",function(){
       }
       else if (isTabOptionActive == true)
       {
-        tabBracket.classList.toggle("Nav_Active")
-        tabOption.classList.toggle("Nav_Active")
+        tabPlayer.classList.toggle("Nav_Actif")
+        tabOption.classList.toggle("Nav_Actif")
         isTabOptionActive = false
         isTabPlayerActive = true
       }
@@ -60,15 +60,15 @@ document.addEventListener("DOMContentLoaded",function(){
     {
       if (isTabBracketActive == true)
       {
-        tabBracket.classList.toggle("Nav_Active")
-        tabPlayer.classList.toggle("Nav_Active")
+        tabBracket.classList.toggle("Nav_Actif")
+        tabOption.classList.toggle("Nav_Actif")
         isTabBracketActive = false
         isTabOptionActive = true
       }
       else if (isTabPlayerActive == true)
       {
-        tabPlayer.classList.toggle("Nav_Active")
-        tabOption.classList.toggle("Nav_Active")
+        tabPlayer.classList.toggle("Nav_Actif")
+        tabOption.classList.toggle("Nav_Actif")
         isTabPlayerActive = false
         isTabOptionActive = true
       }
