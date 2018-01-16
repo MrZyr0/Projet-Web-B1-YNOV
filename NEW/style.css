@@ -1,20 +1,30 @@
+/* INITIALISATION CSS */
 *
 {
   margin: 0px;
   padding: 0px;
 }
 
+
+
+/* DEFINITION POLICE */
 @font-face
 {
   font-family: 'Titre-Tournois';
   src: url('../Contenu/Polices/Polices/good_morning_2/Good-Morning.ttf');
 }
 
+
+
+/* PAGE COMPLETE */
 .Page
 {
   background-color: #142939;
 }
 
+
+
+/* ENTETE */
 .Entete
 {
   display: flex;
@@ -33,14 +43,18 @@
 {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 10%;
 }
 
 .Entete_Titre-Tournois
 {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 
   font-family: 'Titre-Tournois';
-  font-size: 4em;
+  font-size: 230%;
   color: #fc9e00;
 }
 
@@ -49,28 +63,134 @@
   display: flex;
   align-items: center;
 
-  padding-left: 1em;
+  width: 100%;
+
+  padding-left: 5%;
 }
 
 .Entete_Infos-Hote
 {
+  display: flex;
+  flex-flow: column nowrap;
 
+  align-items: center;
+
+  margin-right: 10%;
 }
 
 .Entete_Info-Hote-Titre
 {
-
+  margin-bottom: 15px;
 }
 
 .Entete_Infos_Hote
 {
-  width: 50px;
-  height: 50px;
-
-  margin-right: 7em;
+  max-width: 100px;
+  filter: drop-shadow(0px 0px 2px #222);
 }
 
 .Entete_Infos_Desc
 {
-  max-width: 500px;
+  max-width: 550px;
+}
+
+.Entete_Logo-Jeux
+{
+  max-width: 240px;
+  height: auto;
+
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+
+
+/* NAVIGATION */
+.Nav
+{
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.Nav_Ul
+{
+  display: flex;
+  flex-flow: row nowrap;
+
+  list-style: none;
+
+  margin-top: 50px;
+}
+
+.Nav li
+{
+  background-color: #333743;
+  color: white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  transform: skewX(-30deg);
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.Nav li p
+{
+  transform: skewX(30deg);
+  font-size: 25px;
+}
+
+.Nav_Arbre
+{
+  border-bottom: 1px solid white;
+}
+
+.Nav_Joueurs
+{
+  border-bottom: 1px solid white;
+}
+
+.Nav_Parametres
+{
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.Nav_Actif
+{
+  border-bottom: 1px solid black;
+}
+
+
+
+/* ONGLET ARBRE */
+.Onglets
+{
+  margin-left: 58px;
+  margin-right: 58px;
+
+  background-color: #333743;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.Onglet_Arbre
+{
+  overflow: auto;
+
+  padding: 10px;
+  padding-bottom: 20px;
+
+  transform: rotateY(0deg);
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.Pied-Page
+{
+  height: 100px;
+  width: 100%;
+
+  margin-top: 50px;
+
+  background-color: grey;
 }
