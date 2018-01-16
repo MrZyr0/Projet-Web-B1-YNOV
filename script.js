@@ -737,7 +737,14 @@ document.addEventListener("DOMContentLoaded",function(){
           listPlayer[i] = 0
         }
       }
-      console.log(listPlayer)
+    }
+
+
+    
+
+    function updateScore()
+    {
+
     }
 
   })
