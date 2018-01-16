@@ -263,6 +263,10 @@
 .Onglet_Joueurs
 {
   display: none;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+
   overflow: auto;
 }
 
@@ -274,6 +278,9 @@
 .Onglet_Parametres
 {
   display: none;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 
