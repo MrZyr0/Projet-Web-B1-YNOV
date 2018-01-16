@@ -174,6 +174,7 @@
 
 .Onglets
 {
+  min-height: 520px;
   overflow: auto;
 
   margin-left: 58px;
@@ -204,6 +205,8 @@
 {
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
 
   width: 100%;
 }
@@ -213,7 +216,11 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  justify-content: center;
 
+  min-width: 90px;
+  min-height: 65px;
+  margin: 5px;
   padding: 5px;
 
   border: 3px solid #B4B4B4;
@@ -225,14 +232,22 @@
 {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 27px;
 }
 
-
+.Bloc-Joueurs_Infos_Pseudo
+{
+  border-bottom: 1px solid white;
+}
 
 /* PIED DE PAGE */
 .Pied-Page
 {
-  height: 100px;
+  height: 50px;
   width: 100%;
 
   margin-top: 50px;
