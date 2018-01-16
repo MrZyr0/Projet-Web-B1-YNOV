@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded",function(){
     console.log("[DOM] Loaded")
 
+    //définition des variables des onglets
+
     var tabBracket = document.querySelector(".Nav_Arbre")
     var isTabBracketActive = true
     var tabPlayer = document.querySelector(".Nav_Joueurs")
@@ -8,9 +10,17 @@ document.addEventListener("DOMContentLoaded",function(){
     var tabOption = document.querySelector(".Nav_Parametres")
     var isTabOptionActive = false
 
+    //définition des events listener
+
     tabBracket.addEventListener("click", switchToBracket)
     tabPlayer.addEventListener("click", switchToPlayer)
     tabOption.addEventListener("click", switchToOption)
+
+    //définition des variables de page
+
+    var pageBracket = document.querySelector(".Onglet_Arbre")
+    var pagePlayer = document.querySelector(".Onglet_Joueurs")
+    var pageOption = document.querySelector(".Onglet_Parametres")
 
     function switchToBracket()
     {
@@ -28,7 +38,7 @@ document.addEventListener("DOMContentLoaded",function(){
       else if (isTabOptionActive == true)
       {
         tabBracket.classList.toggle("Nav_Actif")
-        tabOption.classList.toggle("Nav_Actiif")
+        tabOption.classList.toggle("Nav_Actif")
         isTabOptionActive = false
         isTabBracketActive = true
       }
