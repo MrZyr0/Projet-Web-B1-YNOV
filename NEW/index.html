@@ -41,14 +41,23 @@
 
         <button type="button" name="Joueurs-Appliquer">Appliquer</button>
       </div>
+
+      <div class="Onglets_Joueurs_Carte">
+        <img src="" alt="">
+        <p>Pseudo</p>
+        <p>Nom</p>
+        <p>Prenom</p>
+        <p>Nombre de match gagnés</p> <span>0</span>
+        <p>Nombre de match perdus</p> <span>0</span>
+      </div>
     </section>
 
     <section class="Onglets Onglet_Parametres">
-      <input type="text" placeholder="Nom du Tournois" class="Onglet_Parametres_Nom-Tournois" required>
-      <input type="text" placeholder="Hébergeur" class="Onglet_Parametres_Nom-Hote" required>
-      <select class="Onglet_Parametres_Jeux" size="1" required>
+      <input type="text" placeholder="Nom du Tournois" class="Parametres-Input Onglet_Parametres_Nom-Tournois" required>
+      <input type="text" placeholder="Hébergeur" class="Parametres-Input Onglet_Parametres_Nom-Hote" required>
+      <select class="Parametres-Input Onglet_Parametres_Jeux" size="1" required>
         <option hidden>Jeux</option>
-        <option value="CSGO">Counter-Strike: Global Offensive</option>
+        <option value="CSGO">Counter-Strike GO</option>
         <option value="HOTS">Heroes Of the Storm</option>
         <option value="HS">Hearthstone</option>
         <option value="LOL">League Of Legends</option>
@@ -56,8 +65,8 @@
         <option value="RL">Rocket League</option>
         <option value="SC2">StarCraft 2</option>
       </select>
-      <input type="number" value="0" min="3" max="256" required class="Onglet_Parametres_Nb-Joueurs">
-      <input type="button" value="Appliquer" class="Onglet_Parametres_Appliquer">
+      <input type="number" value="0" min="3" max="256" required class="Parametres-Input Onglet_Parametres_Nb-Joueurs">
+      <input type="button" value="Appliquer" class="Parametres-Input Onglet_Parametres_Appliquer">
     </section>
 
 

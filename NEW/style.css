@@ -265,8 +265,7 @@
 .Onglet_Joueurs
 {
   display: none;
-  flex-flow: column nowrap;
-  align-items: center;
+  flex-flow: row nowrap;
   justify-content: center;
 
   overflow: auto;
@@ -276,6 +275,8 @@
 {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
 
   max-width: 200px;
 
@@ -284,7 +285,15 @@
 
 .Onglets_Joueurs_Liste_Pseudo
 {
-  
+
+}
+
+.Onglets_Joueurs_Carte
+{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -302,7 +311,21 @@
   justify-content: center;
 }
 
+.Parametres-Input
+{
+  width: 142px;
+  text-align: center;
+}
 
+.Onglet_Parametres_Jeux
+{
+  width: 145px;
+}
+
+.Onglet_Parametres_Appliquer
+{
+  width: 70px;
+}
 
 /* ################### */
 
