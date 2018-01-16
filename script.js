@@ -402,15 +402,12 @@ document.addEventListener("DOMContentLoaded",function(){
     var isTabPlayers = false
     var tabOptions = document.querySelector(".Onglet_Parametres")
     var isTabOptions = false
-    var tabHelp = document.querySelector(".Onglets_Aide")
-    var isTabHelp = false
 
     //eventlistener des cliques sur les onglets
 
     tabBracket.addEventListener("click", switchToBracket)
     tabPlayers.addEventListener("click", switchToPlayers)
     tabOptions.addEventListener("click", switchToOptions)
-    tabHelp.addEventListener("click", switchToHelp)
 
     //définition des variables de page
 
@@ -457,18 +454,6 @@ document.addEventListener("DOMContentLoaded",function(){
 
           isTabOptions = false
         }
-        else if (isTabHelp)
-        {
-          pageHelp.style.transform = "rotateY(90deg)"
-
-          var timerDisplay = setTimeout(function(){
-            pageHelp.style.display = "none"
-            pageBracket.style.display = "flex"
-            clearTimeout(timerDisplay)
-          }, 1000)
-
-          isTabHelp = false
-        }
 
         var timerDisplay2 = setTimeout(function()
           {
@@ -513,18 +498,6 @@ document.addEventListener("DOMContentLoaded",function(){
           }, 1000)
 
           isTabOptions = false
-        }
-        else if (isTabHelp)
-        {
-          pageHelp.style.transform = "rotateY(90deg)"
-
-          var timerDisplay = setTimeout(function(){
-            pageHelp.style.display = "none"
-            pagePlayers.style.display = "flex"
-            clearTimeout(timerDisplay)
-          }, 1000)
-
-          isTabHelp = false
         }
 
         var timerDisplay2 = setTimeout(function()
@@ -573,18 +546,6 @@ document.addEventListener("DOMContentLoaded",function(){
 
           isTabBracket = false
         }
-        else if (isTabHelp)
-        {
-          pageHelp.style.transform = "rotateY(90deg)"
-
-          var timerDisplay = setTimeout(function(){
-            pageHelp.style.display = "none"
-            pageOptions.style.display = "flex"
-            clearTimeout(timerDisplay)
-          }, 1000)
-
-          isTabHelp = false
-        }
 
         var timerDisplay2 = setTimeout(function()
           {
@@ -594,62 +555,6 @@ document.addEventListener("DOMContentLoaded",function(){
       }
     }
 
-    function switchToHelp()
-    {
-      if (isTabHelp)
-      {
-        console.log("Can't switch to tab help, already on it")
-      }
-      else
-      {
-        console.log("Switched to tab help")
-
-        isTabHelp = true
-
-        if (isTabPlayers)
-        {
-          pagePlayers.style.transform = "rotateY(90deg)"
-
-          var timerDisplay = setTimeout(function(){
-            pagePlayers.style.display = "none"
-            pageHelp.style.display = "flex"
-            clearTimeout(timerDisplay)
-          }, 1000)
-
-          isTabPlayers = false
-        }
-        else if (isTabBracket)
-        {
-          pageBracket.style.transform = "rotateY(90deg)"
-
-          var timerDisplay = setTimeout(function(){
-            pageBracket.style.display = "none"
-            pageHelp.style.display = "flex"
-            clearTimeout(timerDisplay)
-          }, 1000)
-
-          isTabBracket = false
-        }
-        else if (isTabOptions)
-        {
-          pageOptions.style.transform = "rotateY(90deg)"
-
-          var timerDisplay = setTimeout(function(){
-            pageOptions.style.display = "none"
-            pageHelp.style.display = "flex"
-            clearTimeout(timerDisplay)
-          }, 1000)
-
-          isTabOptions = false
-        }
-
-        var timerDisplay2 = setTimeout(function()
-          {
-            pageHelp.style.transform = "rotateY(0deg)"
-            clearTimeout(timerDisplay2)
-          }, 1100)
-      }
-    }
 
     //section concernant le nombre de joueur etc...
 
@@ -740,7 +645,7 @@ document.addEventListener("DOMContentLoaded",function(){
     }
 
 
-    
+
 
     function updateScore()
     {
