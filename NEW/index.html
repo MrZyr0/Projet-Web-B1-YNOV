@@ -37,17 +37,27 @@
     </section>
 
     <section class="Onglets Onglet_Joueurs">
-      <button type="button" name="Joueurs-Appliquer">Appliquer</button>
+      <div class="Onglets_Joueurs_Liste">
+
+        <button type="button" name="Joueurs-Appliquer">Appliquer</button>
+      </div>
     </section>
 
     <section class="Onglets Onglet_Parametres">
-      <p class="Parametres-Onglet_Nom-Tournois">Le nom du tournois</p>
-      <p class="Parametres-Onglet_Desc-Tournois">Description du tournois</p>
-      <p class="Parametres-Onglet_Hergeur-Tournois">Tournois Hébergé par...</p>
-      <p class="Parametres-Onglet_Jeux-Tournois">Le jeux</p>
-      <p>Nombre de joueurs : </p>
-      <input type="number" name="NbJoueur" value="8" class="nbjoueurs">
-      <button type="button" name="Parametres-Appliquer" class="btn_app_parametres">Appliquer</button>
+      <input type="text" placeholder="Nom du Tournois" class="Onglet_Parametres_Nom-Tournois" required>
+      <input type="text" placeholder="Hébergeur" class="Onglet_Parametres_Nom-Hote" required>
+      <select class="Onglet_Parametres_Jeux" size="1" required>
+        <option hidden>Jeux</option>
+        <option value="CSGO">Counter-Strike: Global Offensive</option>
+        <option value="HOTS">Heroes Of the Storm</option>
+        <option value="HS">Hearthstone</option>
+        <option value="LOL">League Of Legends</option>
+        <option value="OW">Overwatch</option>
+        <option value="RL">Rocket League</option>
+        <option value="SC2">StarCraft 2</option>
+      </select>
+      <input type="number" value="0" min="3" max="256" required class="Onglet_Parametres_Nb-Joueurs">
+      <input type="button" value="Appliquer" class="Onglet_Parametres_Appliquer">
     </section>
 
 
@@ -71,5 +81,9 @@
       </div>
       <div class="Connecteur-Joueur Tour-3_Connecteur-Bas-Joueur-1"></div>
     </div>
+  </template>
+
+  <template id="Template_Joueur">
+    <input type="text" placeholder="Pseudo" class="Onglets_Joueurs_Liste_Pseudo">
   </template>
 </html>
