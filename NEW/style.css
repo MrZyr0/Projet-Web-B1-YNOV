@@ -6,6 +6,8 @@
 }
 
 
+/* ################### */
+
 
 /* DEFINITION POLICE */
 @font-face
@@ -15,6 +17,8 @@
 }
 
 
+/* ################### */
+
 
 /* PAGE COMPLETE */
 .Page
@@ -22,6 +26,8 @@
   background-color: #142939;
 }
 
+
+/* ################### */
 
 
 /* ENTETE */
@@ -103,6 +109,8 @@
 }
 
 
+/* ################### */
+
 
 /* NAVIGATION */
 .Nav
@@ -175,7 +183,6 @@
 .Onglets
 {
   min-height: 520px;
-  overflow: auto;
 
   margin-left: 58px;
   margin-right: 58px;
@@ -189,12 +196,16 @@
 }
 
 
+/* ################### */
+
 
 /* ONGLET ARBRE */
 .Onglet_Arbre
 {
   padding: 10px;
   padding-bottom: 20px;
+
+  overflow: auto;
 
   transform: rotateY(0deg);
   transition-property: transform;
@@ -243,6 +254,31 @@
 {
   border-bottom: 1px solid white;
 }
+
+
+/* ################### */
+
+
+/* ONGLET JOUEURS */
+.Onglet_Joueurs
+{
+  display: none;
+  overflow: auto;
+}
+
+
+/* ################### */
+
+
+/* ONGLET PARAMETRES */
+.Onglet_Parametres
+{
+  display: none;
+}
+
+
+/* ################### */
+
 
 /* PIED DE PAGE */
 .Pied-Page
