@@ -24,14 +24,14 @@ document.addEventListener("DOMContentLoaded",function(){
 
     function switchToBracket()
     {
-      if (isTabBracketActive == true)
-      {
-        console.log("already on bracket tab");
-      }
-      else if (isTabPlayerActive == true)
+      if (isTabPlayerActive == true)
       {
         tabBracket.classList.toggle("Nav_Actif")
         tabPlayer.classList.toggle("Nav_Actif")
+
+        pageBracket.style.display = "flex"
+        pagePlayer.style.display = "none"
+
         isTabPlayerActive = false
         isTabBracketActive = true
       }
@@ -39,6 +39,10 @@ document.addEventListener("DOMContentLoaded",function(){
       {
         tabBracket.classList.toggle("Nav_Actif")
         tabOption.classList.toggle("Nav_Actif")
+
+        pageBracket.style.display = "flex"
+        pageOption.style.display = "none"
+
         isTabOptionActive = false
         isTabBracketActive = true
       }
@@ -50,17 +54,21 @@ document.addEventListener("DOMContentLoaded",function(){
       {
         tabBracket.classList.toggle("Nav_Actif")
         tabPlayer.classList.toggle("Nav_Actif")
+
+        pagePlayer.style.display = "flex"
+        pageBracket.style.display = "none"
+
         isTabBracketActive = false
         isTabPlayerActive = true
-      }
-      else if (isTabPlayerActive == true)
-      {
-        console.log("already on player tab")
       }
       else if (isTabOptionActive == true)
       {
         tabPlayer.classList.toggle("Nav_Actif")
         tabOption.classList.toggle("Nav_Actif")
+
+        pagePlayer.style.display = "flex"
+        pageOption.style.display = "none"
+
         isTabOptionActive = false
         isTabPlayerActive = true
       }
@@ -72,6 +80,10 @@ document.addEventListener("DOMContentLoaded",function(){
       {
         tabBracket.classList.toggle("Nav_Actif")
         tabOption.classList.toggle("Nav_Actif")
+
+        pageOption.style.display = "flex"
+        pageBracket.style.display = "none"
+
         isTabBracketActive = false
         isTabOptionActive = true
       }
@@ -79,12 +91,12 @@ document.addEventListener("DOMContentLoaded",function(){
       {
         tabPlayer.classList.toggle("Nav_Actif")
         tabOption.classList.toggle("Nav_Actif")
+
+        pageOption.style.display = "flex"
+        pagePlayer.style.display = "none"
+
         isTabPlayerActive = false
         isTabOptionActive = true
-      }
-      else if (isTabOptionActive == true)
-      {
-        console.log("already on option tab")
       }
     }
 })
