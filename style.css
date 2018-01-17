@@ -287,6 +287,11 @@
   width: 100%;
 }
 
+.Arbre_Ligne-Overflow-9j-10
+{
+  width: 155%;
+}
+
 .Bloc-Joueurs
 {
   display: flex;
@@ -346,55 +351,29 @@
 {
   width: 25.1%;
 }
-
 .InterConnecteur-T1-4j
 {
-  width: 30%;
+  width: 50.2%;
 }
 
 
-/* 5-6 JOUEURS */
+/* 5-8 JOUEURS */
 .InterConnecteur-T0-5j
 {
-  width: 10%;
+  width: 12.6%;
 }
-
 .InterConnecteur-T1-5j
 {
-  width: 30%;
+  width: 25.1%;
 }
 .InterConnecteur-T2-5j
 {
-  width: 40%;
+  width: 50.2%;
 }
 
 
-/* 7-8 JOUEURS */
-.InterConnecteur-T0-7j
-{
-  width: 10%;
-}
-
-.InterConnecteur-T1-7j
-{
-  width: 30%;
-}
-
-.InterConnecteur-T2-7j
-{
-  width: 40%;
-}
-
-.InterConnecteur-T3-7j
-{
-  width: 40%;
-}
 
 
-.InterConnecteur-Tour-Fin
-{
-  width: 21.5%;
-}
 
 .Onglet_Arbre_Appliquer
 {
