@@ -344,7 +344,7 @@
 /* 3-4 JOUEURS */
 .InterConnecteur-T0-4j
 {
-  width: 10%;
+  width: 25.1%;
 }
 
 .InterConnecteur-T1-4j
@@ -354,38 +354,38 @@
 
 
 /* 5-6 JOUEURS */
-.InterConnecteur-T0-4j
+.InterConnecteur-T0-5j
 {
   width: 10%;
 }
 
-.InterConnecteur-T1-4j
+.InterConnecteur-T1-5j
 {
   width: 30%;
 }
-.InterConnecteur-T2-4j
+.InterConnecteur-T2-5j
 {
   width: 40%;
 }
 
 
 /* 7-8 JOUEURS */
-.InterConnecteur-T0-4j
+.InterConnecteur-T0-7j
 {
   width: 10%;
 }
 
-.InterConnecteur-T1-4j
+.InterConnecteur-T1-7j
 {
   width: 30%;
 }
 
-.InterConnecteur-T2-4j
+.InterConnecteur-T2-7j
 {
   width: 40%;
 }
 
-.InterConnecteur-T3-4j
+.InterConnecteur-T3-7j
 {
   width: 40%;
 }
