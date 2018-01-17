@@ -166,7 +166,53 @@ document.addEventListener("DOMContentLoaded",function(){
 
       console.log("Players: "+numberPlayer)
       console.log("Bye: "+numberBye)
+
       updateDisplayPlayer(numberPlayerMax, numberPlayer, numberBye, numberBracketSection)
+
+
+      // var gameSelector = document.querySelector(".Parametres-Input Onglet_Parametres_Jeux")
+      // var gameSelected = gameSelector.option.value
+
+
+
+      // updateGameLogo(gameSelected)
+
+      var tournamentName = document.querySelector(".Onglet_Parametres_Nom-Tournois").value
+
+      updateTournamentName(tournamentName)
+    }
+
+    function updateGameLogo(game)
+    {
+      var actualLogo = document.querySelector(".Entete_Logo-Jeux")
+      console.log("hi");
+
+      actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_OW.png"
+
+      switch (game)
+      {
+        case CSGO: actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_CSGO.png"
+          break;
+        case HOTS: actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_HOTS.png"
+          break;
+        case HS: actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_HS.png"
+          break;
+        case LOL: actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_LOL.png"
+          break;
+        case RL: actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_RL.png"
+          break;
+        case SC2: actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_SC2.png"
+          break;
+
+        default: break;
+
+      }
+    }
+
+    function updateTournamentName(name)
+    {
+      var actualName = document.querySelector(".Entete_Titre-Tournois")
+      actualName.innerHTML = name
     }
 
     function  updateDisplayPlayer(playerMax, player, bye, nbrBrSec)
