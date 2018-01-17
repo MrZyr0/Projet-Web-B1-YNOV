@@ -13,7 +13,7 @@
 @font-face
 {
   font-family: 'Titre-Tournois';
-  src: url('../Contenu/Polices/Polices/good_morning_2/Good-Morning.ttf');
+  src: url('Contenu/Polices/Polices/good_morning_2/Good-Morning.ttf');
 }
 
 
@@ -439,10 +439,16 @@
 /* PIED DE PAGE */
 .Pied-Page
 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   height: 50px;
   width: 100%;
 
   margin-top: 50px;
 
   background-color: grey;
+  color: white;
+  font-weight: bold;
 }
