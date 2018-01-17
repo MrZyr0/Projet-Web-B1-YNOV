@@ -341,14 +341,53 @@
   background-color: white;
 }
 
-.InterConnecteur-T0-256j
+/* 3-4 JOUEURS */
+.InterConnecteur-T0-4j
 {
-  width: 0.393%;
+  width: 10%;
 }
 
-.InterConnecteur-Tour-Fin
+.InterConnecteur-T1-4j
 {
-  width: 21.5%;
+  width: 30%;
+}
+
+
+/* 5-6 JOUEURS */
+.InterConnecteur-T0-4j
+{
+  width: 10%;
+}
+
+.InterConnecteur-T1-4j
+{
+  width: 30%;
+}
+.InterConnecteur-T2-4j
+{
+  width: 40%;
+}
+
+
+/* 7-8 JOUEURS */
+.InterConnecteur-T0-4j
+{
+  width: 10%;
+}
+
+.InterConnecteur-T1-4j
+{
+  width: 30%;
+}
+
+.InterConnecteur-T2-4j
+{
+  width: 40%;
+}
+
+.InterConnecteur-T3-4j
+{
+  width: 40%;
 }
 
 .Onglet_Arbre_Appliquer
