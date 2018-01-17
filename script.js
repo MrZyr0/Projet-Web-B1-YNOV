@@ -172,6 +172,10 @@ document.addEventListener("DOMContentLoaded",function(){
       var tournamentName = document.querySelector(".Onglet_Parametres_Nom-Tournois").value
 
       updateTournamentName(tournamentName)
+
+      var tournamentDesc = document.querySelector(".Onglet_Parametres_Desc-Tournois").value
+
+      updateTournamentDesc(tournamentDesc)
     }
 
 
@@ -290,6 +294,12 @@ document.addEventListener("DOMContentLoaded",function(){
     {
       var actualName = document.querySelector(".Entete_Titre-Tournois")
       actualName.innerHTML = name
+    }
+
+    function updateTournamentDesc(desc)
+    {
+      var actualDesc = document.querySelector(".Entete_Infos_Desc")
+      actualDesc.innerHTML = desc
     }
 
     function  updateDisplayPlayer(playerMax, player, bye, nbrBrSec)
