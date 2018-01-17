@@ -176,34 +176,112 @@ document.addEventListener("DOMContentLoaded",function(){
 
 
 
-    // var gameSelection = document
+    var btnCSGO = document.querySelector(".Logo_CSGO")
+    var btnHOTS = document.querySelector(".Logo_HOTS")
+    var btnHS = document.querySelector(".Logo_HS")
+    var btnLOL = document.querySelector(".Logo_LOL")
+    var btnOW = document.querySelector(".Logo_OW")
+    var btnRL = document.querySelector(".Logo_RL")
+    var btnSC2 = document.querySelector(".Logo_SC2")
+    var actualLogo = document.querySelector(".Entete_Logo-Jeux")
 
+    btnHS.addEventListener("click", updateGameLogoHS)
+    btnOW.addEventListener("click", updateGameLogoOW)
+    btnRL.addEventListener("click", updateGameLogoRL)
+    btnLOL.addEventListener("click", updateGameLogoLOL)
+    btnSC2.addEventListener("click", updateGameLogoSC2)
+    btnCSGO.addEventListener("click", updateGameLogoCSGO)
+    btnHOTS.addEventListener("click", updateGameLogoHOTS)
 
-    function updateGameLogo(game)
+    function updateGameLogoHS()
     {
-      var actualLogo = document.querySelector(".Entete_Logo-Jeux")
-      console.log("hi")
+      actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_HS.png"
 
+      btnHS.classList.add("Logo-Selectionne")
+      btnOW.classList.remove("Logo-Selectionne")
+      btnRL.classList.remove("Logo-Selectionne")
+      btnLOL.classList.remove("Logo-Selectionne")
+      btnSC2.classList.remove("Logo-Selectionne")
+      btnCSGO.classList.remove("Logo-Selectionne")
+      btnHOTS.classList.remove("Logo-Selectionne")
+    }
+
+    function updateGameLogoOW()
+    {
       actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_OW.png"
 
-      switch (game)
-      {
-        case CSGO: actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_CSGO.png"
-          break;
-        case HOTS: actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_HOTS.png"
-          break;
-        case HS: actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_HS.png"
-          break;
-        case LOL: actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_LOL.png"
-          break;
-        case RL: actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_RL.png"
-          break;
-        case SC2: actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_SC2.png"
-          break;
+      btnHS.classList.remove("Logo-Selectionne")
+      btnOW.classList.add("Logo-Selectionne")
+      btnRL.classList.remove("Logo-Selectionne")
+      btnLOL.classList.remove("Logo-Selectionne")
+      btnSC2.classList.remove("Logo-Selectionne")
+      btnCSGO.classList.remove("Logo-Selectionne")
+      btnHOTS.classList.remove("Logo-Selectionne")
+    }
 
-        default: break;
+    function updateGameLogoRL()
+    {
+      actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_RL.png"
 
-      }
+      btnHS.classList.remove("Logo-Selectionne")
+      btnOW.classList.remove("Logo-Selectionne")
+      btnRL.classList.add("Logo-Selectionne")
+      btnLOL.classList.remove("Logo-Selectionne")
+      btnSC2.classList.remove("Logo-Selectionne")
+      btnCSGO.classList.remove("Logo-Selectionne")
+      btnHOTS.classList.remove("Logo-Selectionne")
+    }
+
+    function updateGameLogoLOL()
+    {
+      actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_LOL.png"
+
+      btnHS.classList.remove("Logo-Selectionne")
+      btnOW.classList.remove("Logo-Selectionne")
+      btnRL.classList.remove("Logo-Selectionne")
+      btnLOL.classList.add("Logo-Selectionne")
+      btnSC2.classList.remove("Logo-Selectionne")
+      btnCSGO.classList.remove("Logo-Selectionne")
+      btnHOTS.classList.remove("Logo-Selectionne")
+    }
+
+    function updateGameLogoSC2()
+    {
+      actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_SC2.png"
+
+      btnHS.classList.remove("Logo-Selectionne")
+      btnOW.classList.remove("Logo-Selectionne")
+      btnRL.classList.remove("Logo-Selectionne")
+      btnLOL.classList.remove("Logo-Selectionne")
+      btnSC2.classList.add("Logo-Selectionne")
+      btnCSGO.classList.remove("Logo-Selectionne")
+      btnHOTS.classList.remove("Logo-Selectionne")
+    }
+
+    function updateGameLogoCSGO()
+    {
+      actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_CS.png"
+
+      btnHS.classList.remove("Logo-Selectionne")
+      btnOW.classList.remove("Logo-Selectionne")
+      btnRL.classList.remove("Logo-Selectionne")
+      btnLOL.classList.remove("Logo-Selectionne")
+      btnSC2.classList.remove("Logo-Selectionne")
+      btnCSGO.classList.add("Logo-Selectionne")
+      btnHOTS.classList.remove("Logo-Selectionne")
+    }
+
+    function updateGameLogoHOTS()
+    {
+      actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_HOTS.png"
+
+      btnHS.classList.remove("Logo-Selectionne")
+      btnOW.classList.remove("Logo-Selectionne")
+      btnRL.classList.remove("Logo-Selectionne")
+      btnLOL.classList.remove("Logo-Selectionne")
+      btnSC2.classList.remove("Logo-Selectionne")
+      btnCSGO.classList.remove("Logo-Selectionne")
+      btnHOTS.classList.add("Logo-Selectionne")
     }
 
     function updateTournamentName(name)
@@ -253,6 +331,7 @@ document.addEventListener("DOMContentLoaded",function(){
         zoneSectionBracket.insertAdjacentHTML("beforeend", templateConnectorBloc)
 
         var zoneBlocPlayer = document.querySelectorAll(".Arbre_Tour")
+        var zoneBlocConnector = document.querySelectorAll(".Arbre_Interconnecteurs")
 
         zoneBlocPlayer[i].classList.add("Bracket_"+i)
       }
