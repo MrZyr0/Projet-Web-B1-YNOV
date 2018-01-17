@@ -231,10 +231,6 @@
   padding-bottom: 20px;
 
   overflow: auto;
-
-  transform: rotateY(0deg);
-  transition-property: transform;
-  transition-duration: 1s;
 }
 
 .Arbre_Tour
@@ -245,6 +241,13 @@
   justify-content: space-around;
 
   width: 100%;
+}
+
+.Bracket
+{
+  display: flex;
+  flex-flow: row;
+  height: 85px;
 }
 
 .Bloc-Joueurs
