@@ -259,10 +259,8 @@
 .Arbre_Tour, .Arbre_Interconnecteurs
 {
   display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
   justify-content: space-around;
-
+  padding-right: 10px;
   width: 100%;
 }
 
@@ -300,6 +298,7 @@
 .Bloc-Joueurs_Infos_Pseudo, .Bloc-Joueurs_Infos_Score
 {
   margin: 5px;
+  width: 125px;
 
   text-align: center;
 }
@@ -314,9 +313,29 @@
 
 .InterConnecteur
 {
-  width: 10%;
   height: 2px;
+  width: 50px;
+  border-left: 3px solid black;
+  background-color: white;
 }
+
+.InterConnecteur-T0-256j
+{
+  width: 0.393%;
+}
+
+.InterConnecteur-Tour-Fin
+{
+  width: 21.5%;
+}
+
+.Onglet_Arbre_Appliquer
+{
+    width: 65px;
+    margin: auto;
+}
+
+
 
 /* ################### */
 
