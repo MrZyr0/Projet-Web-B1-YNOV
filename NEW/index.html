@@ -9,11 +9,29 @@
   </head>
 
   <body class="Page">
-    <!-- <section class="Acceuil">
-      <div class="">
+    <!-- <section class="Accueil">
+      <div class="Accueil_Fenetre Fenetre-1">
+        <h2>Bienven</h2>
+      </div>
 
-      </div> -->
-    </section>
+      <div class="Accueil_Fenetre Fenetre-2">
+        <input type="text" placeholder="Nom du Tournois" class="Parametres-Input Onglet_Parametres_Nom-Tournois" required>
+        <input type="text" placeholder="Hébergeur" class="Parametres-Input Onglet_Parametres_Nom-Hote" required>
+        <select class="Parametres-Input Onglet_Parametres_Jeux" size="1" required>
+          <option hidden>Jeux</option>
+          <option value="CSGO">Counter-Strike GO</option>
+          <option value="HOTS">Heroes Of the Storm</option>
+          <option value="HS">Hearthstone</option>
+          <option value="LOL">League Of Legends</option>
+          <option value="OW">Overwatch</option>
+          <option value="RL">Rocket League</option>
+          <option value="SC2">StarCraft 2</option>
+        </select>
+        <input type="number" value="3" min="3" max="256" required class="Parametres-Input Onglet_Parametres_Nb-Joueurs">
+        <input type="button" value="Appliquer" class="Parametres-Input Onglet_Parametres_Appliquer">
+
+      </div>
+    </section> -->
 
     <header class="Entete">
         <div class="Entete_Infos-Txt">
@@ -88,19 +106,24 @@
     </div>
   </template>
 
+  <template id="Template_Arbre_InterConnecteur">
+    <div class="Arbre_Interconnecteurs">
+      <div class="InterConnecteur">
+      </div>
+    </div>
+  </template>
+
   <template id="Template_Bloc-Joueurs">
     <div class="Bloc-Joueurs">
       <div class="Bloc-Joueurs_Infos">
         <p class="Bloc-Joueurs_Infos_Pseudo">Joueur</p>
         <p class="Score-Joueurs Tour-3_Score-Joueur-1">0</p>
       </div>
-      <div class="Connecteur-Joueur Tour-3_Connecteur-Bas-Joueur-1"></div>
+      <div class="Connecteur-Joueur"></div>
     </div>
   </template>
 
-  <template id="Template_">
 
-  </template>
   <template id="Template_Joueur">
     <input type="text" placeholder="Pseudo" class="Onglets_Joueurs_Liste_Pseudo">
   </template>
