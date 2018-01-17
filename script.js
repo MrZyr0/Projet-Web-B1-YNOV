@@ -1,655 +1,246 @@
 document.addEventListener("DOMContentLoaded",function(){
     console.log("[DOM] Loaded")
 
-    //définition des variables des joueurs
-
-    var player01 = document.querySelectorAll(".Joueur-1")
-    var isPlayer01On = false
-    var player02 = document.querySelectorAll(".Joueur-2")
-    var isPlayer02On = false
-    var player03 = document.querySelectorAll(".Joueur-3")
-    var isPlayer03On = false
-    var player04 = document.querySelectorAll(".Joueur-4")
-    var isPlayer04On = false
-    var player05 = document.querySelectorAll(".Joueur-5")
-    var isPlayer05On = false
-    var player06 = document.querySelectorAll(".Joueur-6")
-    var isPlayer06On = false
-    var player07 = document.querySelectorAll(".Joueur-7")
-    var isPlayer07On = false
-    var player08 = document.querySelectorAll(".Joueur-8")
-    var isPlayer08On = false
-
-    //prise en charge des cliques sur les différents joueurs
-
-    player01.forEach(function(event){
-      event.addEventListener("click",highlightP01)
-    })
-    player02.forEach(function(event){
-      event.addEventListener("click",highlightP02)
-    })
-    player03.forEach(function(event){
-      event.addEventListener("click",highlightP03)
-    })
-    player04.forEach(function(event){
-      event.addEventListener("click",highlightP04)
-    })
-    player05.forEach(function(event){
-      event.addEventListener("click",highlightP05)
-    })
-    player06.forEach(function(event){
-      event.addEventListener("click",highlightP06)
-    })
-    player07.forEach(function(event){
-      event.addEventListener("click",highlightP07)
-    })
-    player08.forEach(function(event){
-      event.addEventListener("click",highlightP08)
-    })
-
-    //fonctions permettant l'highlight des joueurs
-
-    function highlightP01()
-    {
-      for (var i = 0; i < player01.length; i++) {
-        player01[i].style.backgroundColor = "#dbdd59"
-      }
-      for (var i = 0; i < player02.length; i++) {
-        player02[i].style.filter = "none"
-        player02[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player03.length; i++) {
-        player03[i].style.filter = "none"
-        player03[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player04.length; i++) {
-        player04[i].style.filter = "none"
-        player04[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player05.length; i++) {
-        player05[i].style.filter = "none"
-        player05[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player06.length; i++) {
-        player06[i].style.filter = "none"
-        player06[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player07.length; i++) {
-        player07[i].style.filter = "none"
-        player07[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player08.length; i++) {
-        player08[i].style.filter = "none"
-        player08[i].style.backgroundColor = "#333743"
-      }
-      isPlayer01On = true
-      isPlayer02On = false
-      isPlayer03On = false
-      isPlayer04On = false
-      isPlayer05On = false
-      isPlayer06On = false
-      isPlayer07On = false
-      isPlayer08On = false
-    }
-
-    function highlightP02()
-    {
-      for (var i = 0; i < player01.length; i++) {
-        player01[i].style.filter = "none"
-        player01[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player02.length; i++) {
-        player02[i].style.backgroundColor = "#dbdd54"
-      }
-      for (var i = 0; i < player03.length; i++) {
-        player03[i].style.filter = "none"
-        player03[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player04.length; i++) {
-        player04[i].style.filter = "none"
-        player04[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player05.length; i++) {
-        player05[i].style.filter = "none"
-        player05[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player06.length; i++) {
-        player06[i].style.filter = "none"
-        player06[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player07.length; i++) {
-        player07[i].style.filter = "none"
-        player07[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player08.length; i++) {
-        player08[i].style.filter = "none"
-        player08[i].style.backgroundColor = "#333743"
-      }
-      isPlayer01On = false
-      isPlayer02On = true
-      isPlayer03On = false
-      isPlayer04On = false
-      isPlayer05On = false
-      isPlayer06On = false
-      isPlayer07On = false
-      isPlayer08On = false
-    }
-
-
-    function highlightP03()
-    {
-      for (var i = 0; i < player01.length; i++) {
-        player01[i].style.filter = "none"
-        player01[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player02.length; i++) {
-        player02[i].style.filter = "none"
-        player02[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player03.length; i++) {
-        player03[i].style.backgroundColor = "#dbdd54"
-      }
-      for (var i = 0; i < player04.length; i++) {
-        player04[i].style.filter = "none"
-        player04[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player05.length; i++) {
-        player05[i].style.filter = "none"
-        player05[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player06.length; i++) {
-        player06[i].style.filter = "none"
-        player06[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player07.length; i++) {
-        player07[i].style.filter = "none"
-        player07[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player08.length; i++) {
-        player08[i].style.filter = "none"
-        player08[i].style.backgroundColor = "#333743"
-      }
-      isPlayer01On = false
-      isPlayer02On = false
-      isPlayer03On = true
-      isPlayer04On = false
-      isPlayer05On = false
-      isPlayer06On = false
-      isPlayer07On = false
-      isPlayer08On = false
-    }
-
-    function highlightP04()
-    {
-      for (var i = 0; i < player01.length; i++) {
-        player01[i].style.filter = "none"
-        player01[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player02.length; i++) {
-        player02[i].style.filter = "none"
-        player02[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player03.length; i++) {
-        player03[i].style.filter = "none"
-        player03[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player04.length; i++) {
-        player04[i].style.backgroundColor = "#dbdd54"
-      }
-      for (var i = 0; i < player05.length; i++) {
-        player05[i].style.filter = "none"
-        player05[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player06.length; i++) {
-        player06[i].style.filter = "none"
-        player06[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player07.length; i++) {
-        player07[i].style.filter = "none"
-        player07[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player08.length; i++) {
-        player08[i].style.filter = "none"
-        player08[i].style.backgroundColor = "#333743"
-      }
-      isPlayer01On = false
-      isPlayer02On = false
-      isPlayer03On = false
-      isPlayer04On = true
-      isPlayer05On = false
-      isPlayer06On = false
-      isPlayer07On = false
-      isPlayer08On = false
-    }
-
-    function highlightP05()
-    {
-      for (var i = 0; i < player01.length; i++) {
-        player01[i].style.filter = "none"
-        player01[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player02.length; i++) {
-        player02[i].style.filter = "none"
-        player02[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player03.length; i++) {
-        player03[i].style.filter = "none"
-        player03[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player04.length; i++) {
-        player04[i].style.filter = "none"
-        player04[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player05.length; i++) {
-        player05[i].style.backgroundColor = "#dbdd54"
-      }
-      for (var i = 0; i < player06.length; i++) {
-        player06[i].style.filter = "none"
-        player06[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player07.length; i++) {
-        player07[i].style.filter = "none"
-        player07[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player08.length; i++) {
-        player08[i].style.filter = "none"
-        player08[i].style.backgroundColor = "#333743"
-      }
-      isPlayer01On = false
-      isPlayer02On = true
-      isPlayer03On = false
-      isPlayer04On = false
-      isPlayer05On = true
-      isPlayer06On = false
-      isPlayer07On = false
-      isPlayer08On = false
-    }
-
-    function highlightP06()
-    {
-      for (var i = 0; i < player01.length; i++) {
-        player01[i].style.filter = "none"
-        player01[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player02.length; i++) {
-        player02[i].style.filter = "none"
-        player02[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player03.length; i++) {
-        player03[i].style.filter = "none"
-        player03[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player04.length; i++) {
-        player04[i].style.filter = "none"
-        player04[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player05.length; i++) {
-        player05[i].style.filter = "none"
-        player05[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player06.length; i++) {
-        player06[i].style.backgroundColor = "#dbdd54"
-      }
-      for (var i = 0; i < player07.length; i++) {
-        player07[i].style.filter = "none"
-        player07[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player08.length; i++) {
-        player08[i].style.filter = "none"
-        player08[i].style.backgroundColor = "#333743"
-      }
-      isPlayer01On = false
-      isPlayer02On = false
-      isPlayer03On = false
-      isPlayer04On = false
-      isPlayer05On = false
-      isPlayer06On = true
-      isPlayer07On = false
-      isPlayer08On = false
-    }
-
-    function highlightP07()
-    {
-      for (var i = 0; i < player01.length; i++) {
-        player01[i].style.filter = "none"
-        player01[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player02.length; i++) {
-        player02[i].style.filter = "none"
-        player02[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player03.length; i++) {
-        player03[i].style.filter = "none"
-        player03[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player04.length; i++) {
-        player04[i].style.filter = "none"
-        player04[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player05.length; i++) {
-        player05[i].style.filter = "none"
-        player05[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player06.length; i++) {
-        player06[i].style.filter = "none"
-        player06[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player07.length; i++) {
-        player07[i].style.backgroundColor = "#dbdd54"
-      }
-      for (var i = 0; i < player08.length; i++) {
-        player08[i].style.filter = "none"
-        player08[i].style.backgroundColor = "#333743"
-      }
-      isPlayer01On = false
-      isPlayer02On = false
-      isPlayer03On = false
-      isPlayer04On = false
-      isPlayer05On = false
-      isPlayer06On = false
-      isPlayer07On = true
-      isPlayer08On = false
-    }
-
-    function highlightP08()
-    {
-      for (var i = 0; i < player01.length; i++) {
-        player01[i].style.filter = "none"
-        player01[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player02.length; i++) {
-        player02[i].style.filter = "none"
-        player02[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player03.length; i++) {
-        player03[i].style.filter = "none"
-        player03[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player04.length; i++) {
-        player04[i].style.filter = "none"
-        player04[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player05.length; i++) {
-        player05[i].style.filter = "none"
-        player05[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player06.length; i++) {
-        player06[i].style.filter = "none"
-        player06[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player07.length; i++) {
-        player07[i].style.filter = "none"
-        player07[i].style.backgroundColor = "#333743"
-      }
-      for (var i = 0; i < player08.length; i++) {
-        player08[i].style.backgroundColor = "#dbdd54"
-      }
-      isPlayer01On = false
-      isPlayer02On = false
-      isPlayer03On = false
-      isPlayer04On = false
-      isPlayer05On = false
-      isPlayer06On = false
-      isPlayer07On = false
-      isPlayer08On = true
-    }
-
     //définition des variables des onglets
 
-    var tabBracket = document.querySelector(".Onglets_Arbre")
-    var isTabBracket = true
-    var tabPlayers = document.querySelector(".Onglet_Joueurs")
-    var isTabPlayers = false
-    var tabOptions = document.querySelector(".Onglet_Parametres")
-    var isTabOptions = false
+    var tabBracket = document.querySelector(".Nav_Arbre")
+    var isTabBracketActive = true
+    var tabPlayer = document.querySelector(".Nav_Joueurs")
+    var isTabPlayerActive = false
+    var tabOption = document.querySelector(".Nav_Parametres")
+    var isTabOptionActive = false
 
-    //eventlistener des cliques sur les onglets
+    //définition des events listener
 
     tabBracket.addEventListener("click", switchToBracket)
-    tabPlayers.addEventListener("click", switchToPlayers)
-    tabOptions.addEventListener("click", switchToOptions)
+    tabPlayer.addEventListener("click", switchToPlayer)
+    tabOption.addEventListener("click", switchToOption)
 
     //définition des variables de page
 
-    var pageBracket = document.querySelector(".Arbre-Onglet")
-    var pagePlayers = document.querySelector(".Joueurs-Onglet")
-    var pageOptions = document.querySelector(".Parametres-Onglet")
-    var pageHelp = document.querySelector(".Aide-Onglet")
+    var pageBracket = document.querySelector(".Onglet_Arbre")
+    var pagePlayer = document.querySelector(".Onglet_Joueurs")
+    var pageOption = document.querySelector(".Onglet_Parametres")
 
-    //fonctions permettant de switch sur les différents onglets
+    //fonctions de changement de page
 
     function switchToBracket()
     {
-      if (isTabBracket)
+      if (isTabPlayerActive == true)
       {
-        console.log("Can't switch to tab bracket, already on it")
+        tabBracket.classList.toggle("Nav_Actif")
+        tabPlayer.classList.toggle("Nav_Actif")
+
+        pageBracket.style.display = "flex"
+        pagePlayer.style.display = "none"
+
+        isTabPlayerActive = false
+        isTabBracketActive = true
       }
-      else
+      else if (isTabOptionActive == true)
       {
-        console.log("Switched to tab bracket")
+        tabBracket.classList.toggle("Nav_Actif")
+        tabOption.classList.toggle("Nav_Actif")
 
-        isTabBracket = true
+        pageBracket.style.display = "flex"
+        pageOption.style.display = "none"
 
-        if (isTabPlayers)
-        {
-          pagePlayers.style.transform = "rotateY(90deg)"
-
-          var timerDisplay = setTimeout(function(){
-            pagePlayers.style.display = "none"
-            pageBracket.style.display = "flex"
-            clearTimeout(timerDisplay)
-          }, 1000)
-
-          isTabPlayers = false
-        }
-        else if (isTabOptions)
-        {
-          pageOptions.style.transform = "rotateY(90deg)"
-
-          var timerDisplay = setTimeout(function(){
-            pageOptions.style.display = "none"
-            pageBracket.style.display = "flex"
-            clearTimeout(timerDisplay)
-          }, 1000)
-
-          isTabOptions = false
-        }
-
-        var timerDisplay2 = setTimeout(function()
-          {
-            pageBracket.style.transform = "rotateY(0deg)"
-            clearTimeout(timerDisplay2)
-          }, 1100)
+        isTabOptionActive = false
+        isTabBracketActive = true
       }
     }
 
-    function switchToPlayers()
+    function switchToPlayer()
     {
-      if (isTabPlayers)
+      if (isTabBracketActive == true)
       {
-        console.log("Can't switch to tab players, already on it")
+        tabBracket.classList.toggle("Nav_Actif")
+        tabPlayer.classList.toggle("Nav_Actif")
+
+        pagePlayer.style.display = "flex"
+        pageBracket.style.display = "none"
+
+        isTabBracketActive = false
+        isTabPlayerActive = true
       }
-      else
+      else if (isTabOptionActive == true)
       {
-        console.log("Switched to tab players")
+        tabPlayer.classList.toggle("Nav_Actif")
+        tabOption.classList.toggle("Nav_Actif")
 
-        isTabPlayers = true
+        pagePlayer.style.display = "flex"
+        pageOption.style.display = "none"
 
-        if (isTabBracket)
-        {
-          pageBracket.style.transform = "rotateY(90deg)"
-
-          var timerDisplay = setTimeout(function(){
-            pageBracket.style.display = "none"
-            pagePlayers.style.display = "flex"
-            clearTimeout(timerDisplay)
-          }, 1000)
-
-          isTabBracket = false
-        }
-        else if (isTabOptions)
-        {
-          pageOptions.style.transform = "rotateY(90deg)"
-
-          var timerDisplay = setTimeout(function(){
-            pageOptions.style.display = "none"
-            pagePlayers.style.display = "flex"
-            clearTimeout(timerDisplay)
-          }, 1000)
-
-          isTabOptions = false
-        }
-
-        var timerDisplay2 = setTimeout(function()
-          {
-            pagePlayers.style.transform = "rotateY(0deg)"
-            clearTimeout(timerDisplay2)
-          }, 1100)
-
-
+        isTabOptionActive = false
+        isTabPlayerActive = true
       }
     }
 
-    function switchToOptions()
+    function switchToOption()
     {
-      if (isTabOptions)
+      if (isTabBracketActive == true)
       {
-        console.log("Can't switch to tab options, already on it")
+        tabBracket.classList.toggle("Nav_Actif")
+        tabOption.classList.toggle("Nav_Actif")
+
+        pageOption.style.display = "flex"
+        pageBracket.style.display = "none"
+
+        isTabBracketActive = false
+        isTabOptionActive = true
       }
-      else
+      else if (isTabPlayerActive == true)
       {
-        console.log("Switched to tab options")
+        tabPlayer.classList.toggle("Nav_Actif")
+        tabOption.classList.toggle("Nav_Actif")
 
-        isTabOptions = true
+        pageOption.style.display = "flex"
+        pagePlayer.style.display = "none"
 
-        if (isTabPlayers)
-        {
-          pagePlayers.style.transform = "rotateY(90deg)"
-
-          var timerDisplay = setTimeout(function(){
-            pagePlayers.style.display = "none"
-            pageOptions.style.display = "flex"
-            clearTimeout(timerDisplay)
-          }, 1000)
-
-          isTabPlayers = false
-        }
-        else if (isTabBracket)
-        {
-          pageBracket.style.transform = "rotateY(90deg)"
-
-          var timerDisplay = setTimeout(function(){
-            pageBracket.style.display = "none"
-            pageOptions.style.display = "flex"
-            clearTimeout(timerDisplay)
-          }, 1000)
-
-          isTabBracket = false
-        }
-
-        var timerDisplay2 = setTimeout(function()
-          {
-            pageOptions.style.transform = "rotateY(0deg)"
-            clearTimeout(timerDisplay2)
-          }, 1100)
+        isTabPlayerActive = false
+        isTabOptionActive = true
       }
     }
 
+    //définition de la variable des boutons appliqués
 
-    //section concernant le nombre de joueur etc...
+    var btnAppOption = document.querySelector(".Onglet_Parametres_Appliquer")
+    //var btnAppPlayer =
 
-    var listPlayer = []
-    var btnAppOptions = document.querySelector(".btn_app_parametres")
-    btnAppOptions.addEventListener("click", updatePlayerNumber)
+    //event listeners pour les boutons
 
-    function updatePlayerNumber()
+    btnAppOption.addEventListener("click", updateOption)
+
+
+    //fonctions d'update
+
+    function updateOption()
     {
-      var numberPlayer = document.querySelector(".nbjoueurs").value
+      var numberPlayer = document.querySelector(".Onglet_Parametres_Nb-Joueurs").value
 
-      if (numberPlayer<2)
+      if (numberPlayer>2)
       {
-        numberPlayer = "not enough"
-        numberBye = "none"
-      }
-      else if (numberPlayer==2)
-      {
-        var numberBye = "none"
-        var numberPlayerMax = 2
-      }
-      else if (numberPlayer<=4)
-      {
-        var numberBye = 4 - numberPlayer
-        var numberPlayerMax = 4
-      }
-      else if (numberPlayer<=8)
-      {
-        var numberBye = 8 - numberPlayer
-        var numberPlayerMax = 8
-      }
-      else if (numberPlayer<=16)
-      {
-        var numberBye = 16 - numberPlayer
-        var numberPlayerMax = 16
-      }
-      else if (numberPlayer<=32)
-      {
-        var numberBye = 32 - numberPlayer
-        var numberPlayerMax = 32
-      }
-      else if (numberPlayer<=64)
-      {
-        var numberBye = 64 - numberPlayer
-        var numberPlayerMax = 64
-      }
-      else if (numberPlayer<=128)
-      {
-        var numberBye = 128 - numberPlayer
-        var numberPlayerMax = 128
-      }
-      else if (numberPlayer<=256)
-      {
-        var numberBye = 256 - numberPlayer
-        var numberPlayerMax = 256
+        if (numberPlayer<=4)
+        {
+          var numberBye = 4 - numberPlayer
+          var numberPlayerMax = 4
+          var numberBracketSection = 3
+        }
+        else if (numberPlayer<=8)
+        {
+          var numberBye = 8 - numberPlayer
+          var numberPlayerMax = 8
+          var numberBracketSection = 4
+        }
+        else if (numberPlayer<=16)
+        {
+          var numberBye = 16 - numberPlayer
+          var numberPlayerMax = 16
+          var numberBracketSection = 5
+        }
+        else if (numberPlayer<=32)
+        {
+          var numberBye = 32 - numberPlayer
+          var numberPlayerMax = 32
+          var numberBracketSection = 6
+        }
+        else if (numberPlayer<=64)
+        {
+          var numberBye = 64 - numberPlayer
+          var numberPlayerMax = 64
+          var numberBracketSection = 7
+        }
+        else if (numberPlayer<=128)
+        {
+          var numberBye = 128 - numberPlayer
+          var numberPlayerMax = 128
+          var numberBracketSection = 8
+        }
+        else if (numberPlayer<=256)
+        {
+          var numberBye = 256 - numberPlayer
+          var numberPlayerMax = 256
+          var numberBracketSection = 9
+        }
       }
 
       console.log("Players: "+numberPlayer)
       console.log("Bye: "+numberBye)
-      updateDisplayPlayer(numberPlayerMax, numberPlayer, numberBye)
+      updateDisplayPlayer(numberPlayerMax, numberPlayer, numberBye, numberBracketSection)
     }
 
-    function  updateDisplayPlayer(playerMax, player, bye)
+    function  updateDisplayPlayer(playerMax, player, bye, nbrBrSec)
     {
-      var zonePlayerInput = document.querySelector(".Joueurs-Onglet")
-      var templateInputPlayer = document.querySelector("#boutton-nomjoueurs").innerHTML
-      console.log(templateInputPlayer)
+      var zoneInputPlayer = document.querySelector(".Onglets_Joueurs_Liste")
+      var zoneSectionBracket = document.querySelector(".Onglet_Arbre")
+      var templateInputPlayer = document.querySelector("#Template_Joueur").innerHTML
+      var templateBlocPlayerTop = document.querySelector("#Template_Bloc-Joueurs_Joueur-Top").innerHTML
+      var templateBlocPlayerMid = document.querySelector("#Template_Bloc-Joueurs_Joueur-Mid").innerHTML
+      var templateBlocPlayerBot = document.querySelector("#Template_Bloc-Joueurs_Joueur-Bot").innerHTML
+      var templateBracketSection = document.querySelector("#Template_Arbre_Tour").innerHTML
+      var templateInZonePlayerInput = document.querySelectorAll(".Onglets_Joueurs_Liste_Pseudo")
+      var templateInZonePlayerBloc = document.querySelectorAll(".Bloc-Joueurs")
+      var templateConnectorBloc = document.querySelector("#Template_Arbre_InterConnecteur").innerHTML
+      listPlayer = []
 
-      var templateInZonePlayerInput = document.querySelectorAll(".txtjoueurs")
-      for (var i = 0; i < templateInZonePlayerInput.length; i++) {
+      for (var i = 0; i < templateInZonePlayerInput.length; i++)
+      {
         templateInZonePlayerInput[i].remove()
       }
 
-      listPlayer = []
+      for (var i = 0; i < templateInZonePlayerBloc.length; i++) {
+        templateInZonePlayerBloc[i].remove()
+      }
 
-      for (var i = 0; i < playerMax; i++)
+      for (var j = 0; j < player; j++)
       {
-        if (i<player)
-        {
-          listPlayer[i] = 1
-          zonePlayerInput.insertAdjacentHTML("afterbegin", templateInputPlayer)
-        }
-        else
+        zoneInputPlayer.insertAdjacentHTML("afterbegin", templateInputPlayer)
+
+        listPlayer[i] = 1
+
+        if (i>player)
         {
           listPlayer[i] = 0
         }
       }
+
+      for (var i = 0; i < nbrBrSec; i++)
+      {
+        zoneSectionBracket.insertAdjacentHTML("beforeend", templateBracketSection)
+        zoneSectionBracket.insertAdjacentHTML("beforeend", templateConnectorBloc)
+
+        var zoneBlocPlayer = document.querySelectorAll(".Arbre_Tour")
+
+        zoneBlocPlayer[i].classList.add("Bracket_"+i)
+      }
+
+
+      for (var c = 0; c < nbrBrSec; c++)
+      {
+        var zoneBlocPlayer = document.querySelector(".Bracket_"+c)
+
+        for (var j = 0; j < playerMax; j++)
+        {
+          if (c == 0)
+          {
+            zoneBlocPlayer.insertAdjacentHTML("beforeend", templateBlocPlayerTop)
+            var listPlayerNumber = document.querySelectorAll(".Bloc-Joueurs")
+
+            listPlayerNumber[j].classList.add("Joueur"+j)
+          }
+          else if (c > 0 && c < nbrBrSec-1)
+          {
+            zoneBlocPlayer.insertAdjacentHTML("beforeend", templateBlocPlayerMid)
+          }
+          else if (c == nbrBrSec-1)
+          {
+            zoneBlocPlayer.insertAdjacentHTML("beforeend", templateBlocPlayerBot)
+          }
+        }
+        playerMax = playerMax/2
+      }
+
+
     }
 
-
-
-
-    function updateScore()
-    {
-
-    }
-
-  })
+})

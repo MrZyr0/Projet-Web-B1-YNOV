@@ -9,288 +9,142 @@
   </head>
 
   <body class="Page">
+    <!-- <section class="Accueil">
+      <div class="Accueil_Fenetre Fenetre-1">
+        <h2>Bienven</h2>
+      </div>
+
+      <div class="Accueil_Fenetre Fenetre-2">
+        <input type="text" placeholder="Nom du Tournois" class="Parametres-Input Onglet_Parametres_Nom-Tournois" required>
+        <input type="text" placeholder="Hébergeur" class="Parametres-Input Onglet_Parametres_Nom-Hote" required>
+        <select class="Parametres-Input Onglet_Parametres_Jeux" size="1" required>
+          <option hidden>Jeux</option>
+          <option value="CSGO">Counter-Strike GO</option>
+          <option value="HOTS">Heroes Of the Storm</option>
+          <option value="HS">Hearthstone</option>
+          <option value="LOL">League Of Legends</option>
+          <option value="OW">Overwatch</option>
+          <option value="RL">Rocket League</option>
+          <option value="SC2">StarCraft 2</option>
+        </select>
+        <input type="number" value="3" min="3" max="256" required class="Parametres-Input Onglet_Parametres_Nb-Joueurs">
+        <input type="button" value="Appliquer" class="Parametres-Input Onglet_Parametres_Appliquer">
+
+      </div>
+    </section> -->
+
     <header class="Entete">
-      <div class="Entete_Infos-Texte">
-        <h1 class="Entete_Titre-Tournois">TOURNOIS DE LANCEMENT !!</h1>
-        <div class="Infos-Texte_Desc-Hote">
-          <div class="Infos-Texte_Desc-Hote_Hebergement">
-            <p class="Entete_Hote-Titre">Hébergé par</p>
-            <p class="Entete_Nom-Hote">Prism1</p>
+        <div class="Entete_Infos-Txt">
+          <h1 class="Entete_Titre-Tournois">TITRE DU TOURNOIS !!</h1>
+
+          <div class="Entete_Infos-Hote-Desc">
+            <div class="Entete_Infos-Hote">
+              <p class="Entete_Info-Hote-Titre">Hébergé par :</p>
+              <img src="Contenu/Logos/Logo_Prism.png" alt="Logo Prism-Esport" class="Entete_Infos_Hote">
+            </div>
+            <p class="Entete_Infos_Desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-          <p class="Entete_Description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem</p>
         </div>
-      </div>
-      <div class="Entete_Infos-Img">
-        <img src="Contenu/Logos/Logos_Jeux/Overwatch.png" alt="Logo Jeux" class="Entete_Logo-Jeux">
-      </div>
+        <img src="Contenu/Logos/Logos_Jeux/logo_OW.png" alt="Logo Jeux" class="Entete_Logo-Jeux">
     </header>
 
-
-    <nav class="Nav_Onglets">
-      <div class="Nav_Onglets_Boutton Onglets_Arbre">
-        <p class="Onglets_Texte">Arbre</p>
-      </div>
-
-      <div class="Nav_Onglets_Boutton Onglet_Joueurs">
-        <p class="Onglets_Texte">Joueurs</p>
-      </div>
-
-      <div class="Nav_Onglets_Boutton Onglet_Parametres">
-        <p class="Onglets_Texte">Paramètres</p>
-      </div>
-
-      <div class="Nav_Onglets_Boutton Onglets_Aide">
-        <p class="Onglets_Texte">Aide</p>
-      </div>
+    <nav class="Nav">
+      <ul class="Nav_Ul">
+        <li class="Nav_Arbre Nav_Actif"><p>Arbre</p></li>
+        <li class="Nav_Joueurs"><p>Joueurs</p></li>
+        <li class="Nav_Parametres"><p>Paramètres</p></li>
+        <li id="Nav_Fin"></li>
+      </ul>
     </nav>
 
+    <section class="Onglets Onglet_Arbre">
+    </section>
 
+    <section class="Onglets Onglet_Joueurs">
+      <div class="Onglets_Joueurs_Liste">
 
-    <section class="Onglets Arbre-Onglet">                                           <!-- Conteneur Flex pour l'Arbre -->
-
-      <div class="Arbre_Tour Arbre_Tour-3">                             <!-- 1er tour -->
-
-        <div class="Arbre_Tour-3_Joueur-1">                             <!-- Conteneur Joueur 1 -->
-          <div class="Joueur Joueur-1">                                 <!-- Infos Joueur 1 -->
-            <p class="Pseudo-Joueurs Tour-3_Pseudo-Joueur-1">Joueur 1</p>
-            <p class="Score-Joueurs Tour-3_Score-Joueur-1">0</p>
-            <!-- <img src="Contenu/Logo_Joueur.png" alt="Joueur 1" class="Img-Joueur-1"> -->
-          </div>
-          <div class="Connecteur-Joueur Tour-3_Connecteur-Bas-Joueur-1"></div>
-        </div>
-
-        <div class="Arbre_Tour-3_Joueur-2">                             <!-- Conteneur Joueur 2 -->
-          <div class="Joueur Joueur-2">                                 <!-- Infos Joueur 2 -->
-            <p class="Pseudo-Joueurs Tour-3_Pseudo-Joueur-2">Joueur 2</p>
-            <p class="Score-Joueurs Tour-3_Score-Joueur-2">0</p>
-            <!-- <img src="Contenu/Logo_Joueur.png" alt="Joueur 2" class="Img-Joueur-2"> -->
-          </div>
-          <div class="Connecteur-Joueur Tour-3_Connecteur-Bas-Joueur-2"></div>
-        </div>
-
-        <div class="Arbre_Tour-3_Joueur-3">                             <!-- Conteneur Joueur 3 -->
-          <div class="Joueur Joueur-3">                                 <!-- Infos Joueur 3 -->
-            <p class="Pseudo-Joueurs Tour-3_Pseudo-Joueur-3">Joueur 3</p>
-            <p class="Score-Joueurs Tour-3_Score-Joueur-3">0</p>
-            <!-- <img src="Contenu/Logo_Joueur.png" alt="Joueur 3" class="Img-Joueur-3"> -->
-          </div>
-          <div class="Connecteur-Joueur Tour-3_Connecteur-Bas-Joueur-3"></div>
-        </div>
-
-        <div class="Arbre_Tour-3_Joueur-4">                             <!-- Conteneur Joueur 4 -->
-          <div class="Joueur Joueur-4">                                 <!-- Infos Joueur 4 -->
-            <p class="Pseudo-Joueurs Tour-3_Pseudo-Joueur-4">Joueur 4</p>
-            <p class="Score-Joueurs Tour-3_Score-Joueur-4">0</p>
-            <!-- <img src="Contenu/Logo_Joueur.png" alt="Joueur 4" class="Img-Joueur-4"> -->
-          </div>
-          <div class="Connecteur-Joueur Tour-3_Connecteur-Bas-Joueur-4"></div>
-        </div>
-
-        <div class="Arbre_Tour-3_Joueur-5">                             <!-- Conteneur Joueur 5 -->
-          <div class="Joueur Joueur-5">                                 <!-- Infos Joueur 5 -->
-            <p class="Pseudo-Joueurs Tour-3_Pseudo-Joueur-5">Joueur 5</p>
-            <p class="Score-Joueurs Tour-3_Score-Joueur-5">0</p>
-            <!-- <img src="Contenu/Logo_Joueur.png" alt="Joueur 5" class="Img-Joueur-5"> -->
-          </div>
-          <div class="Connecteur-Joueur Tour-3_Connecteur-Bas-Joueur-5"></div>
-        </div>
-
-        <div class="Arbre_Tour-3_Joueur-6">                             <!-- Conteneur Joueur 6 -->
-          <div class="Joueur Joueur-6">                                 <!-- Infos Joueur 6 -->
-            <p class="Pseudo-Joueurs Tour-3_Pseudo-Joueur-6">Joueur 6</p>
-            <p class="Score-Joueurs Tour-3_Score-Joueur-6">0</p>
-            <!-- <img src="Contenu/Logo_Joueur.png" alt="Joueur 6" class="Img-Joueur-6"> -->
-          </div>
-          <div class="Connecteur-Joueur Tour-3_Connecteur-Bas-Joueur-6"></div>
-        </div>
-
-        <div class="Arbre_Tour-3_Joueur-7">                             <!-- Conteneur Joueur 7 -->
-          <div class="Joueur Joueur-7">                                 <!-- Infos Joueur 7 -->
-            <p class="Pseudo-Joueurs Tour-3_Pseudo-Joueur-7">Joueur 7</p>
-            <p class="Score-Joueurs Tour-3_Score-Joueur-7">0</p>
-            <!-- <img src="Contenu/Logo_Joueur.png" alt="Joueur 7" class="Img-Joueur-7"> -->
-          </div>
-          <div class="Connecteur-Joueur Tour-3_Connecteur-Bas-Joueur-7"></div>
-        </div>
-
-        <div class="Arbre_Tour-3_Joueur-8">                             <!-- Conteneur Joueur 8 -->
-          <div class="Joueur Joueur-8">                                 <!-- Infos Joueur 8 -->
-            <p class="Pseudo-Joueurs Tour-3_Pseudo-Joueur-8">Joueur 8</p>
-            <p class="Score-Joueurs Tour-3_Score-Joueur-8">0</p>
-            <!-- <img src="Contenu/Logo_Joueur.png" alt="Joueur 8" class="Img-Joueur-8"> -->
-          </div>
-          <div class="Connecteur-Joueur Tour-3_Connecteur-Bas-Joueur-8"></div>
-        </div>
+        <button type="button" name="Joueurs-Appliquer">Appliquer</button>
       </div>
 
-
-
-      <div class="Arbre_Conteneur-Connecteurs-Inter-Tours Arbre_Conteneur-Connecteurs-Inter-Tour-3">             <!-- Conteneur Flex pour les Connecteurs entre joueurs du 1er Tour-->
-        <div class="Conteneur-Connecteurs Conteneur-Connecteurs-1"><!-- 1er Connecteurs -->
-          <div class="Arbre_Conteneur-Connecteurs-Inter-Tour-3_Conteneur-Connecteurs_Connecteur Conteneur-Connecteurs-1_Connecteur-Gauche"></div>
-          <div class="Arbre_Conteneur-Connecteurs-Inter-Tour-3_Conteneur-Connecteurs_Connecteur Conteneur-Connecteurs-1_Connecteur-Droite"></div>
-        </div>
-
-        <div class="Conteneur-Connecteurs Conteneur-Connecteurs-2">
-          <div class="Arbre_Conteneur-Connecteurs-Inter-Tour-3_Conteneur-Connecteurs_Connecteur Conteneur-Connecteurs-1_Connecteur-Gauche"></div>
-          <div class="Arbre_Conteneur-Connecteurs-Inter-Tour-3_Conteneur-Connecteurs_Connecteur Conteneur-Connecteurs-1_Connecteur-Droite"></div>
-        </div>
-
-        <div class="Conteneur-Connecteurs Conteneur-Connecteurs-3">
-          <div class="Arbre_Conteneur-Connecteurs-Inter-Tour-3_Conteneur-Connecteurs_Connecteur Conteneur-Connecteurs-1_Connecteur-Gauche"></div>
-          <div class="Arbre_Conteneur-Connecteurs-Inter-Tour-3_Conteneur-Connecteurs_Connecteur Conteneur-Connecteurs-1_Connecteur-Droite"></div>
-        </div>
-
-        <div class="Conteneur-Connecteurs Conteneur-Connecteurs-4">
-          <div class="Arbre_Conteneur-Connecteurs-Inter-Tour-3_Conteneur-Connecteurs_Connecteur Conteneur-Connecteurs-1_Connecteur-Gauche"></div>
-          <div class="Arbre_Conteneur-Connecteurs-Inter-Tour-3_Conteneur-Connecteurs_Connecteur Conteneur-Connecteurs-1_Connecteur-Droite"></div>
-        </div>
+      <div class="Onglets_Joueurs_Carte">
+        <img src="" alt="">
+        <p>Pseudo</p>
+        <p>Nom</p>
+        <p>Prenom</p>
+        <p>Nombre de match gagnés</p> <span>0</span>
+        <p>Nombre de match perdus</p> <span>0</span>
       </div>
+    </section>
 
-
-
-      <div class="Arbre_Tour Arbre_Tour-2">                             <!-- 1er tour -->
-
-        <div class="Arbre_Tour-2_Vainqueur-1">                             <!-- Conteneur Vainqueur 1 -->
-          <div class="Connecteur-Joueur Tour-2_Connecteur-Haut-Vainqueur-1"></div>
-          <div class="Joueur Vainqueur-1">                                 <!-- Infos Vainqueur 1 -->
-            <p class="Pseudo-Joueurs Tour-2_Pseudo-Vainqueur-1">Vainqueur 1</p>
-            <p class="Score-Joueurs Tour-2_Score-Vainqueur-1">0</p>
-            <!-- <img src="Contenu/Logo_Joueur.png" alt="Joueur 1" class="Img-Joueur-1"> -->
-          </div>
-          <div class="Connecteur-Joueur Tour-2_Connecteur-Bas-Vainqueur-1"></div>
-        </div>
-
-        <div class="Arbre_Tour-2_Vainqueur-2">                             <!-- Conteneur Vainqueur 2 -->
-          <div class="Connecteur-Joueur Tour-2_Connecteur-Haut-Vainqueur-2"></div>
-          <div class="Joueur Vainqueur-2">                                 <!-- Infos Vainqueur 2 -->
-            <p class="Pseudo-Joueurs Tour-2_Pseudo-Vainqueur-2">Vainqueur 2</p>
-            <p class="Score-Joueurs Tour-2_Score-Vainqueur-2">0</p>
-            <!-- <img src="Contenu/Logo_Joueur.png" alt="Joueur 2" class="Img-Joueur-2"> -->
-          </div>
-          <div class="Connecteur-Joueur Tour-2_Connecteur-Bas-Vainqueur-2"></div>
-        </div>
-
-        <div class="Arbre_Tour-2_Vainqueur-3">                             <!-- Conteneur Vainqueur 3 -->
-          <div class="Connecteur-Joueur Tour-2_Connecteur-Haut-Vainqueur-3"></div>
-          <div class="Joueur Tour-2_Vainqueur-3">                                 <!-- Infos Vainqueur 3 -->
-            <p class="Pseudo-Joueurs Tour-2_Pseudo-Vainqueur-3">Vainqueur 3</p>
-            <p class="Score-Joueurs Tour-2_Score-Vainqueur-3">0</p>
-            <!-- <img src="Contenu/Logo_Joueur.png" alt="Joueur 3" class="Img-Joueur-3"> -->
-          </div>
-          <div class="Connecteur-Joueur Tour-2_Connecteur-Bas-Vainqueur-3"></div>
-        </div>
-
-        <div class="Arbre_Tour-2_Vainqueur-4">                             <!-- Conteneur Joueur 4 -->
-          <div class="Connecteur-Joueur Tour-2_Connecteur-Haut-Vainqueur-4"></div>
-          <div class="Joueur Tour-2_Vainqueur-4">                                 <!-- Infos Joueur 4 -->
-            <p class="Pseudo-Joueurs Tour-2_Pseudo-Vainqueur-4">Vainqueur 4</p>
-            <p class="Score-Joueurs Tour-2_Score-Vainqueur-4">0</p>
-            <!-- <img src="Contenu/Logo_Joueur.png" alt="Joueur 4" class="Img-Joueur-4"> -->
-          </div>
-          <div class="Connecteur-Joueur Tour-2_Connecteur-Bas-Vainqueur-4"></div>
-        </div>
-      </div>
-
-
-
-      <div class="Arbre_Conteneur-Connecteurs-Inter-Tours Arbre_Conteneur-Connecteurs-Inter-Tour-2">             <!-- Conteneur Flex pour les Connecteurs entre joueurs du 1er Tour-->
-        <div class="Conteneur-Connecteurs Conteneur-Connecteurs-1"><!-- 1er Connecteurs -->
-          <div class="Arbre_Conteneur-Connecteurs-Inter-Tour-2_Conteneur-Connecteurs_Connecteur Conteneur-Connecteurs-1_Connecteur-Gauche"></div>
-          <div class="Arbre_Conteneur-Connecteurs-Inter-Tour-2_Conteneur-Connecteurs_Connecteur Conteneur-Connecteurs-1_Connecteur-Droite"></div>
-        </div>
-
-        <div class="Conteneur-Connecteurs Conteneur-Connecteurs-2">
-          <div class="Arbre_Conteneur-Connecteurs-Inter-Tour-2_Conteneur-Connecteurs_Connecteur Conteneur-Connecteurs-1_Connecteur-Gauche"></div>
-          <div class="Arbre_Conteneur-Connecteurs-Inter-Tour-2_Conteneur-Connecteurs_Connecteur Conteneur-Connecteurs-1_Connecteur-Droite"></div>
-        </div>
-      </div>
-
-
-
-      <div class="Arbre_Tour Arbre_Tour-1">                             <!-- 1er tour -->
-
-        <div class="Arbre_Tour-1_Vainqueur-1">                             <!-- Conteneur Vainqueur 1 -->
-          <div class="Connecteur-Joueur Tour-1_Connecteur-Haut-Vainqueur-1"></div>
-          <div class="Joueur Vainqueur-1">                                 <!-- Infos Vainqueur 1 -->
-            <p class="Pseudo-Joueurs Tour-1_Pseudo-Vainqueur-1">Vainqueur 1</p>
-            <p class="Score-Joueurs Tour-1_Score-Vainqueur-1">0</p>
-            <!-- <img src="Contenu/Logo_Joueur.png" alt="Joueur 1" class="Img-Joueur-1"> -->
-          </div>
-          <div class="Connecteur-Joueur Tour-1_Connecteur-Bas-Vainqueur-1"></div>
-        </div>
-
-        <div class="Arbre_Tour-1_Vainqueur-2">                             <!-- Conteneur Vainqueur 2 -->
-          <div class="Connecteur-Joueur Tour-1_Connecteur-Haut-Vainqueur-2"></div>
-          <div class="Joueur Vainqueur-2">                                 <!-- Infos Vainqueur 2 -->
-            <p class="Pseudo-Joueurs Tour-1_Pseudo-Vainqueur-2">Vainqueur 2</p>
-            <p class="Score-Joueurs Tour-1_Score-Vainqueur-2">0</p>
-            <!-- <img src="Contenu/Logo_Joueur.png" alt="Joueur 2" class="Img-Joueur-2"> -->
-          </div>
-          <div class="Connecteur-Joueur Tour-1_Connecteur-Bas-Vainqueur-2"></div>
-        </div>
-
-      </div>
-
-
-
-      <div class="Arbre_Conteneur-Connecteurs-Inter-Tours Arbre_Conteneur-Connecteurs-Inter-Tour-2">             <!-- Conteneur Flex pour les Connecteurs entre joueurs du 1er Tour-->
-        <div class="Conteneur-Connecteurs Conteneur-Connecteurs-1"><!-- 1er Connecteurs -->
-          <div class="Arbre_Conteneur-Connecteurs-Inter-Tour-1_Conteneur-Connecteurs_Connecteur Conteneur-Connecteurs-1_Connecteur-Gauche"></div>
-          <div class="Arbre_Conteneur-Connecteurs-Inter-Tour-1_Conteneur-Connecteurs_Connecteur Conteneur-Connecteurs-1_Connecteur-Droite"></div>
-        </div>
-      </div>
-
-
-      <div class="Arbre_Tour Arbre_Tour-0">                             <!-- 1er tour -->
-
-        <div class="Arbre_Tour-0_Vainqueur-1">                             <!-- Conteneur Vainqueur 1 -->
-          <div class="Connecteur-Joueur Tour-0_Connecteur-Haut-Vainqueur-1"></div>
-          <div class="Joueur Vainqueur-1">                                 <!-- Infos Vainqueur 1 -->
-            <p class="Pseudo-Joueurs Tour-0_Pseudo-Vainqueur-1">Vainqueur 1</p>
-            <p class="Score-Joueurs Tour-0_Score-Vainqueur-1">0</p>
-            <!-- <img src="Contenu/Logo_Joueur.png" alt="Joueur 1" class="Img-Joueur-1"> -->
-          </div>
-        </div>
-
-      </div>
-
+    <section class="Onglets Onglet_Parametres">
+      <input type="text" placeholder="Nom du Tournois" class="Parametres-Input Onglet_Parametres_Nom-Tournois" required>
+      <input type="text" placeholder="Hébergeur" class="Parametres-Input Onglet_Parametres_Nom-Hote" required>
+      <select class="Parametres-Input Onglet_Parametres_Jeux" size="1" required>
+        <option hidden>Jeux</option>
+        <option value="CSGO">Counter-Strike GO</option>
+        <option value="HOTS">Heroes Of the Storm</option>
+        <option value="HS">Hearthstone</option>
+        <option value="LOL">League Of Legends</option>
+        <option value="OW">Overwatch</option>
+        <option value="RL">Rocket League</option>
+        <option value="SC2">StarCraft 2</option>
+      </select>
+      <input type="number" value="3" min="3" max="256" required class="Parametres-Input Onglet_Parametres_Nb-Joueurs">
+      <input type="button" value="Appliquer" class="Parametres-Input Onglet_Parametres_Appliquer">
     </section>
 
 
+    <footer class="Pied-Page">
 
-    <section class="Onglets Joueurs-Onglet">
-      <button type="button" name="Joueurs-Appliquer">Appliquer</button>
-    </section>
-
-
-    <section class="Onglets Parametres-Onglet">
-      <p class="Parametres-Onglet_Nom-Tournois">Le nom du tournois</p>
-      <p class="Parametres-Onglet_Desc-Tournois">Description du tournois</p>
-      <p class="Parametres-Onglet_Hergeur-Tournois">Tournois Hébergé par...</p>
-      <p class="Parametres-Onglet_Jeux-Tournois">Le jeux</p>
-      <p>Nombre de joueurs : </p>
-      <input type="number" name="NbJoueur" value="8" class="nbjoueurs">
-      <button type="button" name="Parametres-Appliquer" class="btn_app_parametres">Appliquer</button>
-    </section>
-
-
-    <section class="Onglets Aide-Onglet">
-      <p>Ceci sera donc l'aide de la page !</p>
-    </section>
-
-    <footer class="Pied-Page"></footer>
-
-    <template id="boutton-nomjoueurs">
-      <input type="text" name="Joueur" value="Joueur" class="txtjoueurs">
-    </template>
-
-    <template id="Joueur">
-      <div class="Joueur">                                 <!-- Infos Joueur 1 -->
-        <p class="Pseudo-Joueurs">Joueur</p>
-        <p class="Score-Joueurs">0</p>
-        <!-- <img src="Contenu/Logo_Joueur.png" alt="Joueur 1" class="Img-Joueur-1"> -->
-      </div>
-    </template>
+    </footer>
   </body>
+
+
+
+  <template id="Template_Arbre_Tour">
+    <div class="Arbre_Tour">
+    </div>
+  </template>
+
+  <template id="Template_Arbre_InterConnecteur">
+    <div class="Arbre_Interconnecteurs">
+      <div class="InterConnecteur">
+      </div>
+    </div>
+  </template>
+
+  <template id="Template_Bloc-Joueurs_Joueur-Top">
+    <div class="Bloc-Joueurs">
+      <div class="Bloc-Joueurs_Infos">
+        <p class="Bloc-Joueurs_Infos_Pseudo">Joueur</p>
+        <p class="Score-Joueurs Tour-3_Score-Joueur-1">0</p>
+      </div>
+      <div class="Connecteur-Joueur"></div>
+    </div>
+  </template>
+
+  <template id="Template_Bloc-Joueurs_Joueur-Mid">
+    <div class="Connecteur-Joueur"></div>
+    <div class="Bloc-Joueurs">
+      <div class="Bloc-Joueurs_Infos">
+        <p class="Bloc-Joueurs_Infos_Pseudo">Joueur</p>
+        <p class="Score-Joueurs Tour-3_Score-Joueur-1">0</p>
+      </div>
+      <div class="Connecteur-Joueur"></div>
+    </div>
+  </template>
+
+  <template id="Template_Bloc-Joueurs_Joueur-Bot">
+    <div class="Connecteur-Joueur"></div>
+    <div class="Bloc-Joueurs">
+      <div class="Bloc-Joueurs_Infos">
+        <p class="Bloc-Joueurs_Infos_Pseudo">Joueur</p>
+        <p class="Score-Joueurs Tour-3_Score-Joueur-1">0</p>
+      </div>
+    </div>
+  </template>
+
+  <template id="Template_Joueur">
+    <input type="text" placeholder="Pseudo" class="Onglets_Joueurs_Liste_Pseudo">
+  </template>
 </html>
