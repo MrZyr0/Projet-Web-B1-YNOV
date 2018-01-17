@@ -174,10 +174,13 @@ document.addEventListener("DOMContentLoaded",function(){
       var zoneInputPlayer = document.querySelector(".Onglets_Joueurs_Liste")
       var zoneSectionBracket = document.querySelector(".Onglet_Arbre")
       var templateInputPlayer = document.querySelector("#Template_Joueur").innerHTML
-      var templateBlocPlayer = document.querySelector("#Template_Bloc-Joueurs").innerHTML
+      var templateBlocPlayerTop = document.querySelector("#Template_Bloc-Joueurs_Joueur-Top").innerHTML
+      var templateBlocPlayerMid = document.querySelector("#Template_Bloc-Joueurs_Joueur-Mid").innerHTML
+      var templateBlocPlayerBot = document.querySelector("#Template_Bloc-Joueurs_Joueur-Bot").innerHTML
       var templateBracketSection = document.querySelector("#Template_Arbre_Tour").innerHTML
       var templateInZonePlayerInput = document.querySelectorAll(".Onglets_Joueurs_Liste_Pseudo")
       var templateInZonePlayerBloc = document.querySelectorAll(".Bloc-Joueurs")
+      var templateConnectorBloc = document.querySelector("#Template_Arbre_InterConnecteur").innerHTML
       listPlayer = []
 
       for (var i = 0; i < templateInZonePlayerInput.length; i++)
@@ -204,9 +207,11 @@ document.addEventListener("DOMContentLoaded",function(){
       for (var i = 0; i < nbrBrSec; i++)
       {
         zoneSectionBracket.insertAdjacentHTML("beforeend", templateBracketSection)
+        zoneSectionBracket.insertAdjacentHTML("beforeend", templateConnectorBloc)
+
         var zoneBlocPlayer = document.querySelectorAll(".Arbre_Tour")
 
-        zoneBlocPlayer[i].classList.add("Bracket_"+i)        
+        zoneBlocPlayer[i].classList.add("Bracket_"+i)
       }
 
 
@@ -216,7 +221,21 @@ document.addEventListener("DOMContentLoaded",function(){
 
         for (var j = 0; j < playerMax; j++)
         {
-          zoneBlocPlayer.insertAdjacentHTML("afterbegin", templateBlocPlayer)
+          if (c == 0)
+          {
+            zoneBlocPlayer.insertAdjacentHTML("beforeend", templateBlocPlayerTop)
+            var listPlayerNumber = document.querySelectorAll(".Bloc-Joueurs")
+
+            listPlayerNumber[j].classList.add("Joueur"+j)
+          }
+          else if (c > 0 && c < nbrBrSec-1)
+          {
+            zoneBlocPlayer.insertAdjacentHTML("beforeend", templateBlocPlayerMid)
+          }
+          else if (c == nbrBrSec-1)
+          {
+            zoneBlocPlayer.insertAdjacentHTML("beforeend", templateBlocPlayerBot)
+          }
         }
         playerMax = playerMax/2
       }
