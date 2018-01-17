@@ -218,8 +218,8 @@ document.addEventListener("DOMContentLoaded",function(){
    btnHOTS.classList.remove("Logo-Selectionne")
  }
 
- function updateGameLogoRL()
- {
+    function updateGameLogoRL()
+    {
    actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_RL.png"
 
    btnHS.classList.remove("Logo-Selectionne")
@@ -231,9 +231,8 @@ document.addEventListener("DOMContentLoaded",function(){
    btnHOTS.classList.remove("Logo-Selectionne")
  }
 
-   actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_OW.png"
- function updateGameLogoLOL()
- {
+    function updateGameLogoLOL()
+    {
    actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_LOL.png"
 
    btnHS.classList.remove("Logo-Selectionne")
@@ -245,8 +244,8 @@ document.addEventListener("DOMContentLoaded",function(){
    btnHOTS.classList.remove("Logo-Selectionne")
  }
 
-     function updateGameLogoSC2()
-     {
+    function updateGameLogoSC2()
+    {
        actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_SC2.png"
 
        btnHS.classList.remove("Logo-Selectionne")
@@ -259,8 +258,8 @@ document.addEventListener("DOMContentLoaded",function(){
      }
 
 
-     function updateGameLogoCSGO()
-     {
+    function updateGameLogoCSGO()
+    {
        actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_CS.png"
 
        btnHS.classList.remove("Logo-Selectionne")
@@ -272,8 +271,8 @@ document.addEventListener("DOMContentLoaded",function(){
        btnHOTS.classList.remove("Logo-Selectionne")
      }
 
-     function updateGameLogoHOTS()
-     {
+    function updateGameLogoHOTS()
+    {
        actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_HOTS.png"
 
        btnHS.classList.remove("Logo-Selectionne")
@@ -285,83 +284,6 @@ document.addEventListener("DOMContentLoaded",function(){
        btnHOTS.classList.add("Logo-Selectionne")
      }
 
-    function updateGameLogoOW()
-    {
-      actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_OW.png"
-
-      btnHS.classList.remove("Logo-Selectionne")
-      btnOW.classList.add("Logo-Selectionne")
-      btnRL.classList.remove("Logo-Selectionne")
-      btnLOL.classList.remove("Logo-Selectionne")
-      btnSC2.classList.remove("Logo-Selectionne")
-      btnCSGO.classList.remove("Logo-Selectionne")
-      btnHOTS.classList.remove("Logo-Selectionne")
-    }
-
-    function updateGameLogoRL()
-    {
-      actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_RL.png"
-
-      btnHS.classList.remove("Logo-Selectionne")
-      btnOW.classList.remove("Logo-Selectionne")
-      btnRL.classList.add("Logo-Selectionne")
-      btnLOL.classList.remove("Logo-Selectionne")
-      btnSC2.classList.remove("Logo-Selectionne")
-      btnCSGO.classList.remove("Logo-Selectionne")
-      btnHOTS.classList.remove("Logo-Selectionne")
-    }
-
-    function updateGameLogoLOL()
-    {
-      actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_LOL.png"
-
-      btnHS.classList.remove("Logo-Selectionne")
-      btnOW.classList.remove("Logo-Selectionne")
-      btnRL.classList.remove("Logo-Selectionne")
-      btnLOL.classList.add("Logo-Selectionne")
-      btnSC2.classList.remove("Logo-Selectionne")
-      btnCSGO.classList.remove("Logo-Selectionne")
-      btnHOTS.classList.remove("Logo-Selectionne")
-    }
-
-    function updateGameLogoSC2()
-    {
-      actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_SC2.png"
-
-      btnHS.classList.remove("Logo-Selectionne")
-      btnOW.classList.remove("Logo-Selectionne")
-      btnRL.classList.remove("Logo-Selectionne")
-      btnLOL.classList.remove("Logo-Selectionne")
-      btnSC2.classList.add("Logo-Selectionne")
-      btnCSGO.classList.remove("Logo-Selectionne")
-      btnHOTS.classList.remove("Logo-Selectionne")
-    }
-
-    function updateGameLogoCSGO()
-    {
-      actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_CS.png"
-
-      btnHS.classList.remove("Logo-Selectionne")
-      btnOW.classList.remove("Logo-Selectionne")
-      btnRL.classList.remove("Logo-Selectionne")
-      btnLOL.classList.remove("Logo-Selectionne")
-      btnSC2.classList.remove("Logo-Selectionne")
-      btnCSGO.classList.add("Logo-Selectionne")
-      btnHOTS.classList.remove("Logo-Selectionne")
-    }
-
-    function updateGameLogoHOTS()
-    {
-      actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_HOTS.png"
-
-      btnHS.classList.remove("Logo-Selectionne")
-      btnOW.classList.remove("Logo-Selectionne")
-      btnRL.classList.remove("Logo-Selectionne")
-      btnLOL.classList.remove("Logo-Selectionne")
-      btnSC2.classList.remove("Logo-Selectionne")
-      btnCSGO.classList.remove("Logo-Selectionne")
-      btnHOTS.classList.add("Logo-Selectionne")
-    }
 
 
     function updateTournamentName(name)
