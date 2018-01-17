@@ -297,9 +297,11 @@
   font-size: 27px;
 }
 
-.Bloc-Joueurs_Infos_Pseudo
+.Bloc-Joueurs_Infos_Pseudo, .Bloc-Joueurs_Infos_Score
 {
-  border-bottom: 1px solid white;
+  margin: 5px;
+
+  text-align: center;
 }
 
 .Connecteur-Joueur
