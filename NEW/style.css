@@ -37,7 +37,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   position: absolute;
   top: 0px;
   left: 0px;
@@ -227,6 +227,11 @@
 /* ONGLET ARBRE */
 .Onglet_Arbre
 {
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
+
   padding: 10px;
   padding-bottom: 20px;
 
@@ -241,13 +246,6 @@
   justify-content: space-around;
 
   width: 100%;
-}
-
-.Bracket
-{
-  display: flex;
-  flex-flow: row;
-  height: 85px;
 }
 
 .Bloc-Joueurs
