@@ -11,25 +11,26 @@
   <body class="Page">
     <!-- <section class="Accueil">
       <div class="Accueil_Fenetre Fenetre-1">
-        <h2>Bienven</h2>
+        <h2 class="Fenetre-1_Titre">Bienvenu</h2>
+        <input type="button" value="Créer un Tournois" class="Fenetre-1_Btn">
+        <input type="button" value="Historique" class="Fenetre-1_Btn" disabled title="Prochainement disponible !">
       </div>
 
       <div class="Accueil_Fenetre Fenetre-2">
+        <p class="Fenetre-2_Desc">Pour commencer veuillez entrer les informations de votre tournois.</p>
         <input type="text" placeholder="Nom du Tournois" class="Parametres-Input Onglet_Parametres_Nom-Tournois" required>
-        <input type="text" placeholder="Hébergeur" class="Parametres-Input Onglet_Parametres_Nom-Hote" required>
-        <select class="Parametres-Input Onglet_Parametres_Jeux" size="1" required>
-          <option hidden>Jeux</option>
-          <option value="CSGO">Counter-Strike GO</option>
-          <option value="HOTS">Heroes Of the Storm</option>
-          <option value="HS">Hearthstone</option>
-          <option value="LOL">League Of Legends</option>
-          <option value="OW">Overwatch</option>
-          <option value="RL">Rocket League</option>
-          <option value="SC2">StarCraft 2</option>
-        </select>
+        <textarea placeholder="Description du Tournois" class="Parametres-Input Onglet_Parametres_Desc-Tournois"></textarea>
+        <div class="Onglet_Parametres_Jeux">
+          <img src="Contenu/Logos/Logos_Jeux/Logo_CS.png" alt="Counter-Strike : Global Offensive" class="Onglet_Parametres_Jeux-Logo">
+          <img src="Contenu/Logos/Logos_Jeux/Logo_HOTS.png" alt="Heroes Of the Storm" class="Onglet_Parametres_Jeux-Logo">
+          <img src="Contenu/Logos/Logos_Jeux/Logo_HS.png" alt="Hearthstone" class="Onglet_Parametres_Jeux-Logo">
+          <img src="Contenu/Logos/Logos_Jeux/Logo_LOL.png" alt="League Of Legends" class="Onglet_Parametres_Jeux-Logo">
+          <img src="Contenu/Logos/Logos_Jeux/Logo_OW.png" alt="Overwatch" class="Onglet_Parametres_Jeux-Logo Logo-Selectionne">
+          <img src="Contenu/Logos/Logos_Jeux/Logo_RL.png" alt="Rocket League" class="Onglet_Parametres_Jeux-Logo">
+          <img src="Contenu/Logos/Logos_Jeux/Logo_SC2.png" alt="StarCraft 2" class="Onglet_Parametres_Jeux-Logo">
+        </div>
         <input type="number" value="3" min="3" max="256" required class="Parametres-Input Onglet_Parametres_Nb-Joueurs">
         <input type="button" value="Appliquer" class="Parametres-Input Onglet_Parametres_Appliquer">
-
       </div>
     </section> -->
 
@@ -79,15 +80,15 @@
 
     <section class="Onglets Onglet_Parametres">
       <input type="text" placeholder="Nom du Tournois" class="Parametres-Input Onglet_Parametres_Nom-Tournois" required>
-      <input type="text" placeholder="Description du Tournois" class="Parametres-Input Onglet_Parametres_Desc-Tournois" required>
+      <textarea placeholder="Description du Tournois" class="Parametres-Input Onglet_Parametres_Desc-Tournois"></textarea>
       <div class="Onglet_Parametres_Jeux">
-        <img src="Contenu/Logos/Logos_Jeux/Logo_CS.png" alt="Counter-Strike : Global Offensive" class="Onglet_Parametres_Jeux-Logo Logo_CSGO">
-        <img src="Contenu/Logos/Logos_Jeux/Logo_HOTS.png" alt="Heroes Of the Storm" class="Onglet_Parametres_Jeux-Logo Logo_HOTS">
-        <img src="Contenu/Logos/Logos_Jeux/Logo_HS.png" alt="Hearthstone" class="Onglet_Parametres_Jeux-Logo Logo_HS">
-        <img src="Contenu/Logos/Logos_Jeux/Logo_LOL.png" alt="League Of Legends" class="Onglet_Parametres_Jeux-Logo Logo_LOL">
-        <img src="Contenu/Logos/Logos_Jeux/Logo_OW.png" alt="Overwatch" class="Onglet_Parametres_Jeux-Logo Logo_OW Logo-Selectionne">
-        <img src="Contenu/Logos/Logos_Jeux/Logo_RL.png" alt="Rocket League" class="Onglet_Parametres_Jeux-Logo Logo_RL">
-        <img src="Contenu/Logos/Logos_Jeux/Logo_SC2.png" alt="StarCraft 2" class="Onglet_Parametres_Jeux-Logo Logo_SC2">
+        <img src="Contenu/Logos/Logos_Jeux/Logo_CS.png" alt="Counter-Strike : Global Offensive" class="Onglet_Parametres_Jeux-Logo">
+        <img src="Contenu/Logos/Logos_Jeux/Logo_HOTS.png" alt="Heroes Of the Storm" class="Onglet_Parametres_Jeux-Logo">
+        <img src="Contenu/Logos/Logos_Jeux/Logo_HS.png" alt="Hearthstone" class="Onglet_Parametres_Jeux-Logo">
+        <img src="Contenu/Logos/Logos_Jeux/Logo_LOL.png" alt="League Of Legends" class="Onglet_Parametres_Jeux-Logo">
+        <img src="Contenu/Logos/Logos_Jeux/Logo_OW.png" alt="Overwatch" class="Onglet_Parametres_Jeux-Logo Logo-Selectionne">
+        <img src="Contenu/Logos/Logos_Jeux/Logo_RL.png" alt="Rocket League" class="Onglet_Parametres_Jeux-Logo">
+        <img src="Contenu/Logos/Logos_Jeux/Logo_SC2.png" alt="StarCraft 2" class="Onglet_Parametres_Jeux-Logo">
       </div>
       <input type="number" value="3" min="3" max="256" required class="Parametres-Input Onglet_Parametres_Nb-Joueurs">
       <input type="button" value="Appliquer" class="Parametres-Input Onglet_Parametres_Appliquer">
