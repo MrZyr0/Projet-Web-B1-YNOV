@@ -354,16 +354,9 @@ document.addEventListener("DOMContentLoaded",function(){
         var zoneBlocPlayer = document.querySelector(".Bracket_"+c)
         var zoneBlocConnector = document.querySelector(".Connector_"+c)
 
-        if (c==0)
+        if (c != nbrBrSec-1)
         {
-          for (var k = 0; k < playerMax-2; k++)
-          {
-            zoneBlocConnector.insertAdjacentHTML("beforeend", templateConnectorConnector)
-          }
-        }
-        else
-        {
-          for (var k = 0; k < playerMax-1; k++)
+          for (var k = 0; k < playerMax/2; k++)
           {
             zoneBlocConnector.insertAdjacentHTML("beforeend", templateConnectorConnector)
           }
