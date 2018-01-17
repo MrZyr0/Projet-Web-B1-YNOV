@@ -23,11 +23,34 @@
 /* PAGE COMPLETE */
 .Page
 {
+  position: relative;
   background-color: #142939;
 }
 
 
 /* ################### */
+
+
+/* PAGE ACCEUIL */
+.Acceuil
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ################### */
+
 
 
 /* ENTETE */
