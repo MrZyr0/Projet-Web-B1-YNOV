@@ -193,8 +193,8 @@ document.addEventListener("DOMContentLoaded",function(){
    btnCSGO.addEventListener("click", updateGameLogoCSGO)
    btnHOTS.addEventListener("click", updateGameLogoHOTS)
 
- function updateGameLogoHS()
- {
+    function updateGameLogoHS()
+    {
    actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_HS.png"
 
    btnHS.classList.add("Logo-Selectionne")
@@ -206,8 +206,8 @@ document.addEventListener("DOMContentLoaded",function(){
    btnHOTS.classList.remove("Logo-Selectionne")
  }
 
- function updateGameLogoOW()
- {
+    function updateGameLogoOW()
+    {
    actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_OW.png"
 
    btnHS.classList.remove("Logo-Selectionne")
@@ -311,6 +311,7 @@ document.addEventListener("DOMContentLoaded",function(){
       var templateInZonePlayerInput = document.querySelectorAll(".Onglets_Joueurs_Liste_Pseudo")
       var templateInZonePlayerBloc = document.querySelectorAll(".Bloc-Joueurs")
       var templateConnectorBloc = document.querySelector("#Template_Arbre_InterConnecteurs").innerHTML
+      var templateConnectorConnector = document.querySelector("#Template_Arbre_InterConnecteurs_InterConnecteur").innerHTML
       listPlayer = []
 
       for (var i = 0; i < templateInZonePlayerInput.length; i++)
@@ -318,7 +319,8 @@ document.addEventListener("DOMContentLoaded",function(){
         templateInZonePlayerInput[i].remove()
       }
 
-      for (var i = 0; i < templateInZonePlayerBloc.length; i++) {
+      for (var i = 0; i < templateInZonePlayerBloc.length; i++)
+      {
         templateInZonePlayerBloc[i].remove()
       }
 
@@ -343,12 +345,19 @@ document.addEventListener("DOMContentLoaded",function(){
         var zoneBlocConnector = document.querySelectorAll(".Arbre_Interconnecteurs")
 
         zoneBlocPlayer[i].classList.add("Bracket_"+i)
+        zoneBlocConnector[i].classList.add("Connector_"+i)
       }
 
 
       for (var c = 0; c < nbrBrSec; c++)
       {
         var zoneBlocPlayer = document.querySelector(".Bracket_"+c)
+        var zoneBlocConnector = document.querySelector(".Connector_"+c)
+
+        for (var k = 0; k < playerMax; k++)
+        {
+          zoneBlocConnector.insertAdjacentHTML("beforeend", templateConnectorConnector)
+        }
 
         for (var j = 0; j < playerMax; j++)
         {
