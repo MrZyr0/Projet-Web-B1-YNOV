@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded",function(){
     function updateGameLogo(game)
     {
       var actualLogo = document.querySelector(".Entete_Logo-Jeux")
-      console.log("hi");
+      console.log("hi")
 
       actualLogo.src = "Contenu/Logos/Logos_Jeux/logo_OW.png"
 
