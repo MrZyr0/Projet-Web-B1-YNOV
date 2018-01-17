@@ -354,9 +354,19 @@ document.addEventListener("DOMContentLoaded",function(){
         var zoneBlocPlayer = document.querySelector(".Bracket_"+c)
         var zoneBlocConnector = document.querySelector(".Connector_"+c)
 
-        for (var k = 0; k < playerMax; k++)
+        if (c==0)
         {
-          zoneBlocConnector.insertAdjacentHTML("beforeend", templateConnectorConnector)
+          for (var k = 0; k < playerMax-2; k++)
+          {
+            zoneBlocConnector.insertAdjacentHTML("beforeend", templateConnectorConnector)
+          }
+        }
+        else
+        {
+          for (var k = 0; k < playerMax-1; k++)
+          {
+            zoneBlocConnector.insertAdjacentHTML("beforeend", templateConnectorConnector)
+          }
         }
 
         for (var j = 0; j < playerMax; j++)
