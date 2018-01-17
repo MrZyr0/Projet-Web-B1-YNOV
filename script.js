@@ -301,8 +301,8 @@ document.addEventListener("DOMContentLoaded",function(){
 
     function  updateDisplayPlayer(playerMax, player, bye, nbrBrSec)
     {
-      var home2 = document.querySelector(".Fenetre-2")
-      home2.style.display = "none"
+      var home = document.querySelector(".Accueil")
+      home.style.display = "none"
       var zoneInputPlayer = document.querySelector(".Onglets_Joueurs_Liste")
       var zoneSectionBracket = document.querySelector(".Onglet_Arbre")
       var templateInputPlayer = document.querySelector("#Template_Joueur").innerHTML
