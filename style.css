@@ -108,6 +108,8 @@
   background-color: #21455f;
 
   border-bottom: 2px solid grey;
+  color: white;
+  font-weight: bold;
 }
 
 .Entete_Infos-Txt
@@ -353,7 +355,7 @@
 .Onglet_Arbre_Appliquer
 {
     width: 65px;
-    margin: 0 auto;
+    margin: 5px auto;
 }
 
 
@@ -379,14 +381,27 @@
   justify-content: center;
 
   max-width: 200px;
-
-  border-right: 1px solid black;
 }
 
 .Onglets_Joueurs_Liste_Pseudo
 {
   background-color: black;
   color: white;
+  margin: 5px;
+  text-align: center;
+}
+
+.Onglet_Joueurs_Appliquer
+{
+  margin-top: 15px;
+}
+
+.Onglet_Joueurs_Separateur
+{
+  width: 2px;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: white;
 }
 
 .Onglets_Joueurs_Carte
@@ -395,9 +410,32 @@
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+
+  color: white;
 }
 
+.Onglets_Joueurs_Carte_Input
+{
+  width: 142px;
+  text-align: center;
+  vertical-align: middle;
 
+  margin-top: 10px;
+
+  background-color: black;
+  color: white;
+  cursor: not-allowed;
+}
+
+.Onglets_Joueurs_Carte_Pseudo-Label
+{
+  padding-left: 11px;
+}
+
+.Onglets_Joueurs_Carte_Defaite-Label
+{
+  padding-left: 5px;
+}
 
 /* ################### */
 
