@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded",function(){
     var tabOption = document.querySelector(".Nav_Parametres")
     var isTabOptionActive = false
 
+    var listPlayer = []
+
     //définition des events listener
 
     tabBracket.addEventListener("click", switchToBracket)
@@ -105,12 +107,14 @@ document.addEventListener("DOMContentLoaded",function(){
     //définition de la variable des boutons appliqués
 
     var btnAppOption = document.querySelector(".Onglet_Parametres_Appliquer")
-    //var btnAppPlayer =
+    var btnAppPlayer = document.querySelector(".Onglet_Joueurs_Appliquer")
+
+
 
     //event listeners pour les boutons
 
     btnAppOption.addEventListener("click", updateOption)
-
+    btnAppPlayer.addEventListener("click", updatePlayerName)
 
     //fonctions d'update
 
@@ -195,12 +199,15 @@ document.addEventListener("DOMContentLoaded",function(){
       for (var j = 0; j < player; j++)
       {
         zoneInputPlayer.insertAdjacentHTML("afterbegin", templateInputPlayer)
+      }
 
-        listPlayer[i] = 1
+      for (var j = 0; j < playerMax; j++)
+      {
+        listPlayer[j] = 1
 
-        if (i>player)
+        if (j>player)
         {
-          listPlayer[i] = 0
+          listPlayer[j] = 0
         }
       }
 
@@ -242,5 +249,23 @@ document.addEventListener("DOMContentLoaded",function(){
 
 
     }
+
+    function updatePlayerName()
+    {
+      var listPlayerName = document.querySelectorAll(".Onglets_Joueurs_Liste_Pseudo")
+      var listPlayerNameBracket = document.querySelectorAll(".Bloc-Joueurs_Infos_Pseudo")
+
+      for (var i = 0; i < listPlayerNameBracket.length; i++)
+      {
+        listPlayerNameBracket[i].innerHTML = "Bye"
+
+        if (listPlayer[i] == 1)
+        {
+          listPlayerNameBracket[i].innerHTML = listPlayerName[i].value
+        }
+      }
+    }
+
+
 
 })
