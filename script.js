@@ -169,18 +169,15 @@ document.addEventListener("DOMContentLoaded",function(){
 
       updateDisplayPlayer(numberPlayerMax, numberPlayer, numberBye, numberBracketSection)
 
-
-      // var gameSelector = document.querySelector(".Parametres-Input Onglet_Parametres_Jeux")
-      // var gameSelected = gameSelector.option.value
-
-
-
-      // updateGameLogo(gameSelected)
-
       var tournamentName = document.querySelector(".Onglet_Parametres_Nom-Tournois").value
 
       updateTournamentName(tournamentName)
     }
+
+
+
+    // var gameSelection = document
+
 
     function updateGameLogo(game)
     {
@@ -226,7 +223,7 @@ document.addEventListener("DOMContentLoaded",function(){
       var templateBracketSection = document.querySelector("#Template_Arbre_Tour").innerHTML
       var templateInZonePlayerInput = document.querySelectorAll(".Onglets_Joueurs_Liste_Pseudo")
       var templateInZonePlayerBloc = document.querySelectorAll(".Bloc-Joueurs")
-      var templateConnectorBloc = document.querySelector("#Template_Arbre_InterConnecteur").innerHTML
+      var templateConnectorBloc = document.querySelector("#Template_Arbre_InterConnecteurs").innerHTML
       listPlayer = []
 
       for (var i = 0; i < templateInZonePlayerInput.length; i++)
