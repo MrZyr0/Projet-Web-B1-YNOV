@@ -171,9 +171,11 @@ document.addEventListener("DOMContentLoaded",function(){
 
     function  updateDisplayPlayer(playerMax, player, bye, nbrBrSec)
     {
-      var zoneInputPlayer = document.querySelector(".Onglet_Joueurs")
+      var zoneInputPlayer = document.querySelector(".Onglets_Joueurs_Liste")
+      var zoneSectionBracket = document.querySelector(".Onglet_Arbre")
       var templateInputPlayer = document.querySelector("#Template_Joueur").innerHTML
       var templateBlocPlayer = document.querySelector("#Template_Bloc-Joueurs").innerHTML
+      var templateBracketSection = document.querySelector("#Template_Arbre_Tour").innerHTML
       var templateInZonePlayerInput = document.querySelectorAll(".Onglets_Joueurs_Liste_Pseudo")
       var templateInZonePlayerBloc = document.querySelectorAll(".Bloc-Joueurs")
       listPlayer = []
@@ -201,18 +203,25 @@ document.addEventListener("DOMContentLoaded",function(){
 
       for (var i = 0; i < nbrBrSec; i++)
       {
-        var newSection = document.createElement("div")
-        newSection.className = "Arbre_tour_"+i+" Bracket" 
+        zoneSectionBracket.insertAdjacentHTML("beforeend", templateBracketSection)
+        var zoneBlocPlayer = document.querySelectorAll(".Arbre_Tour")
 
-        document.querySelector(".Onglet_Arbre").appendChild(newSection)
+        zoneBlocPlayer[i].classList.add("Bracket_"+i)        
+      }
+
+
+      for (var c = 0; c < nbrBrSec; c++)
+      {
+        var zoneBlocPlayer = document.querySelector(".Bracket_"+c)
 
         for (var j = 0; j < playerMax; j++)
         {
-          var zoneBlocPlayer = document.querySelector(".Arbre_tour_"+i)
           zoneBlocPlayer.insertAdjacentHTML("afterbegin", templateBlocPlayer)
         }
         playerMax = playerMax/2
       }
+
+
     }
 
 })
