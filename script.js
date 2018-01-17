@@ -164,9 +164,6 @@ document.addEventListener("DOMContentLoaded",function(){
         }
       }
 
-      console.log("Players: "+numberPlayer)
-      console.log("Bye: "+numberBye)
-
       updateDisplayPlayer(numberPlayerMax, numberPlayer, numberBye, numberBracketSection)
 
       var tournamentName = document.querySelector(".Onglet_Parametres_Nom-Tournois").value
