@@ -301,6 +301,8 @@ document.addEventListener("DOMContentLoaded",function(){
 
     function  updateDisplayPlayer(playerMax, player, bye, nbrBrSec)
     {
+      var home = document.querySelector(".Accueil")
+      home.style.display = "none"
       var zoneInputPlayer = document.querySelector(".Onglets_Joueurs_Liste")
       var zoneSectionBracket = document.querySelector(".Onglet_Arbre")
       var templateInputPlayer = document.querySelector("#Template_Joueur").innerHTML
@@ -387,10 +389,8 @@ document.addEventListener("DOMContentLoaded",function(){
     //définition variables Accueil
 
     var btnCreateTournament = document.querySelector(".Fenetre-1_Btn")
-    var btnCreateTrounamentForReal = document.querySelector(".Fenetre-2_Btn")
 
     btnCreateTournament.addEventListener("click", showWindow2)
-    btnCreateTournamentForReal.addEventListener("click", deleteWindow2)
 
     function showWindow2()
     {
@@ -399,12 +399,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
       home1.style.display = "none"
       home2.style.display = "flex"
-    }
 
-    function deleteWindow2()
-    {
-      var home = document.querySelector(".Accueil")
-      home.style.display = "none"
     }
 
 })
