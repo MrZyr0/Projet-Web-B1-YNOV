@@ -16,5 +16,5 @@ L'outil doit intégrer plusieurs fonctionnalitées :
 
 Ce projet à été développé en 7 jours. Malheureusement le projet n'est pas terminé et l'optimisation n'est pas optimale.
 
-* [Cédric Lesueur](https://github.com/Cedro23) : Javascript
+* [Cédric LESUEUR](https://github.com/Cedro23) : Javascript
 * [Julien SEIXAS](https://github.com/MrZyr0) :HTML & CSS & icones
