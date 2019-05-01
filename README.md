@@ -1,13 +1,8 @@
 # Projet WEB
 
-Dans le cadre du lancement du lancement de [Prism e-sport](https://twitter.com/prismesport) en dehors du [Campus Ynov de Lyon](http://ynovlyon.com/).
+Dans le cadre du lancement du lancement de [Prism e-sport](https://twitter.com/prismesport) en dehors du [Campus Ynov de Lyon](http://ynovlyon.com/). L'organisme à eu besoin d'un outil interne pour gérer facile ses tounois. Tous les élève de Bachelors 1 Informatique ont étés mis en compétition pour faire cette plateforme
 
 ![Screenshot of the website](https://raw.githubusercontent.com/MrZyr0/Projet-Web/master/Contenu/screenshot.png)
-
-## L'objectif
-
-L'objectif de ce projet est de créer une plateforme pour gérer facilement leurs tournois.
-
 
 ## Les fonctionnalitées
 
